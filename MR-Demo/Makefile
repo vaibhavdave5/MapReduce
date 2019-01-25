@@ -5,11 +5,11 @@
 hadoop.root=/home/joe/tools/hadoop/hadoop-2.9.1
 jar.name=mr-demo-1.0.jar
 jar.path=target/${jar.name}
-job.name=wc.WordCount
+job.name=wc.FollowerCount
 local.input=input
 local.output=output
 # Pseudo-Cluster Execution
-hdfs.user.name=joe
+hdfs.user.name=vaibhav
 hdfs.input=input
 hdfs.output=output
 # AWS EMR Execution
@@ -21,7 +21,7 @@ aws.input=input
 aws.output=output
 aws.log.dir=log
 aws.num.nodes=1
-aws.instance.type=m3.xlarge
+aws.instance.type=m4.xlarge
 # -----------------------------------------------------------
 
 # Compiles code and builds jar (with dependencies).

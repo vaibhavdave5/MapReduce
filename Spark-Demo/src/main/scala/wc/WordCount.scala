@@ -4,6 +4,8 @@ import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.log4j.LogManager
 import org.apache.log4j.Level
+import java.io._
+
 
 object WordCountMain {
   
@@ -26,6 +28,13 @@ object WordCountMain {
     val counts = textFile.map(line => line.split(",")(0))
                  .map(word => (word, 1))
                  .reduceByKey(_ + _)
+                 
+    val file = new File("log.txt")
+    val bw = new BufferedWriter(new FileWriter(file))
+    bw.write(counts.toDebugString)    
+    bw.close()             
+    
+    
     counts.saveAsTextFile(args(1))
   }
 }
