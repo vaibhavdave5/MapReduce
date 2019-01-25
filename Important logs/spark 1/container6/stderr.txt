@@ -1,0 +1,124 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/10/__spark_libs__819149632355513758.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19/01/25 15:22:20 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 10153@ip-172-31-9-171
+19/01/25 15:22:20 INFO SignalUtils: Registered signal handler for TERM
+19/01/25 15:22:20 INFO SignalUtils: Registered signal handler for HUP
+19/01/25 15:22:20 INFO SignalUtils: Registered signal handler for INT
+19/01/25 15:22:21 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/01/25 15:22:21 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/01/25 15:22:21 INFO SecurityManager: Changing view acls groups to: 
+19/01/25 15:22:21 INFO SecurityManager: Changing modify acls groups to: 
+19/01/25 15:22:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/01/25 15:22:21 INFO TransportClientFactory: Successfully created connection to ip-172-31-12-227.ec2.internal/172.31.12.227:38289 after 95 ms (0 ms spent in bootstraps)
+19/01/25 15:22:21 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/01/25 15:22:21 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/01/25 15:22:21 INFO SecurityManager: Changing view acls groups to: 
+19/01/25 15:22:21 INFO SecurityManager: Changing modify acls groups to: 
+19/01/25 15:22:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/01/25 15:22:21 INFO TransportClientFactory: Successfully created connection to ip-172-31-12-227.ec2.internal/172.31.12.227:38289 after 1 ms (0 ms spent in bootstraps)
+19/01/25 15:22:22 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/blockmgr-e5a8b117-1736-4032-8fe8-1ddee74d77a3
+19/01/25 15:22:22 INFO MemoryStore: MemoryStore started with capacity 2.8 GB
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-172-31-12-227.ec2.internal:38289
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+19/01/25 15:22:22 INFO Executor: Starting executor ID 5 on host ip-172-31-9-171.ec2.internal
+19/01/25 15:22:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46519.
+19/01/25 15:22:22 INFO NettyBlockTransferService: Server created on ip-172-31-9-171.ec2.internal:46519
+19/01/25 15:22:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/01/25 15:22:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(5, ip-172-31-9-171.ec2.internal, 46519, None)
+19/01/25 15:22:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(5, ip-172-31-9-171.ec2.internal, 46519, None)
+19/01/25 15:22:22 INFO BlockManager: external shuffle service port = 7337
+19/01/25 15:22:22 INFO BlockManager: Registering executor with local external shuffle service.
+19/01/25 15:22:22 INFO TransportClientFactory: Successfully created connection to ip-172-31-9-171.ec2.internal/172.31.9.171:7337 after 1 ms (0 ms spent in bootstraps)
+19/01/25 15:22:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(5, ip-172-31-9-171.ec2.internal, 46519, None)
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Got assigned task 10
+19/01/25 15:22:22 INFO CoarseGrainedExecutorBackend: Got assigned task 11
+19/01/25 15:22:22 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+19/01/25 15:22:22 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+19/01/25 15:22:22 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+19/01/25 15:22:22 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+19/01/25 15:22:22 INFO Executor: Fetching spark://ip-172-31-12-227.ec2.internal:38289/jars/spark-demo.jar with timestamp 1548429718049
+19/01/25 15:22:22 INFO TransportClientFactory: Successfully created connection to ip-172-31-12-227.ec2.internal/172.31.12.227:38289 after 1 ms (0 ms spent in bootstraps)
+19/01/25 15:22:22 INFO Utils: Fetching spark://ip-172-31-12-227.ec2.internal:38289/jars/spark-demo.jar to /mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/spark-6882031a-4a93-4ceb-99dc-d430f8855fc4/fetchFileTemp2029497864337008535.tmp
+19/01/25 15:22:22 INFO Utils: Copying /mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/spark-6882031a-4a93-4ceb-99dc-d430f8855fc4/9769077931548429718049_cache to /mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/container_1548428999420_0001_01_000009/./spark-demo.jar
+19/01/25 15:22:22 INFO Executor: Adding file:/mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/container_1548428999420_0001_01_000009/./spark-demo.jar to class loader
+19/01/25 15:22:22 INFO TorrentBroadcast: Started reading broadcast variable 1
+19/01/25 15:22:23 INFO TransportClientFactory: Successfully created connection to ip-172-31-8-9.ec2.internal/172.31.8.9:40451 after 1 ms (0 ms spent in bootstraps)
+19/01/25 15:22:23 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 2.8 GB)
+19/01/25 15:22:23 INFO TorrentBroadcast: Reading broadcast variable 1 took 207 ms
+19/01/25 15:22:23 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.8 KB, free 2.8 GB)
+19/01/25 15:22:23 INFO HadoopRDD: Input split: s3://mr-input-hw1/input/edges.csv:671088640+67108864
+19/01/25 15:22:23 INFO HadoopRDD: Input split: s3://mr-input-hw1/input/edges.csv:536870912+67108864
+19/01/25 15:22:23 INFO TorrentBroadcast: Started reading broadcast variable 0
+19/01/25 15:22:23 INFO HadoopRDD: Input split: s3://mr-input-hw1/input/edges.csv:738197504+67108864
+19/01/25 15:22:23 INFO HadoopRDD: Input split: s3://mr-input-hw1/input/edges.csv:603979776+67108864
+19/01/25 15:22:23 INFO TransportClientFactory: Successfully created connection to ip-172-31-10-234.ec2.internal/172.31.10.234:35867 after 4 ms (0 ms spent in bootstraps)
+19/01/25 15:22:23 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.7 KB, free 2.8 GB)
+19/01/25 15:22:23 INFO TorrentBroadcast: Reading broadcast variable 0 took 125 ms
+19/01/25 15:22:23 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 317.3 KB, free 2.8 GB)
+19/01/25 15:22:24 INFO GPLNativeCodeLoader: Loaded native gpl library
+19/01/25 15:22:24 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev bab859f34a291cb7b3f4e724b59e1b48af69016b]
+19/01/25 15:22:26 INFO S3NativeFileSystem: Opening 's3://mr-input-hw1/input/edges.csv' for reading
+19/01/25 15:22:26 INFO S3NativeFileSystem: Opening 's3://mr-input-hw1/input/edges.csv' for reading
+19/01/25 15:22:26 INFO S3NativeFileSystem: Opening 's3://mr-input-hw1/input/edges.csv' for reading
+19/01/25 15:22:26 INFO S3NativeFileSystem: Opening 's3://mr-input-hw1/input/edges.csv' for reading
+19/01/25 15:22:35 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 1183 bytes result sent to driver
+19/01/25 15:22:35 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 1226 bytes result sent to driver
+19/01/25 15:22:35 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 1183 bytes result sent to driver
+19/01/25 15:22:36 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 1183 bytes result sent to driver
+19/01/25 15:23:08 INFO CoarseGrainedExecutorBackend: Got assigned task 30
+19/01/25 15:23:08 INFO Executor: Running task 10.0 in stage 1.0 (TID 30)
+19/01/25 15:23:08 INFO CoarseGrainedExecutorBackend: Got assigned task 33
+19/01/25 15:23:08 INFO Executor: Running task 13.0 in stage 1.0 (TID 33)
+19/01/25 15:23:08 INFO CoarseGrainedExecutorBackend: Got assigned task 36
+19/01/25 15:23:08 INFO Executor: Running task 16.0 in stage 1.0 (TID 36)
+19/01/25 15:23:08 INFO CoarseGrainedExecutorBackend: Got assigned task 39
+19/01/25 15:23:08 INFO Executor: Running task 19.0 in stage 1.0 (TID 39)
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+19/01/25 15:23:08 INFO TorrentBroadcast: Started reading broadcast variable 2
+19/01/25 15:23:08 INFO TransportClientFactory: Successfully created connection to ip-172-31-15-145.ec2.internal/172.31.15.145:45999 after 1 ms (0 ms spent in bootstraps)
+19/01/25 15:23:08 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 26.9 KB, free 2.8 GB)
+19/01/25 15:23:08 INFO TorrentBroadcast: Reading broadcast variable 2 took 194 ms
+19/01/25 15:23:08 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 72.3 KB, free 2.8 GB)
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-12-227.ec2.internal:38289)
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/01/25 15:23:08 INFO MapOutputTrackerWorker: Got the output locations
+19/01/25 15:23:08 INFO ShuffleBlockFetcherIterator: Getting 20 non-empty blocks including 4 local blocks and 16 remote blocks
+19/01/25 15:23:08 INFO ShuffleBlockFetcherIterator: Getting 20 non-empty blocks including 4 local blocks and 16 remote blocks
+19/01/25 15:23:08 INFO ShuffleBlockFetcherIterator: Getting 20 non-empty blocks including 4 local blocks and 16 remote blocks
+19/01/25 15:23:08 INFO ShuffleBlockFetcherIterator: Getting 20 non-empty blocks including 4 local blocks and 16 remote blocks
+19/01/25 15:23:08 INFO TransportClientFactory: Successfully created connection to ip-172-31-10-234.ec2.internal/172.31.10.234:7337 after 6 ms (0 ms spent in bootstraps)
+19/01/25 15:23:08 INFO TransportClientFactory: Successfully created connection to ip-172-31-15-145.ec2.internal/172.31.15.145:7337 after 3 ms (0 ms spent in bootstraps)
+19/01/25 15:23:09 INFO TransportClientFactory: Successfully created connection to ip-172-31-8-9.ec2.internal/172.31.8.9:7337 after 21 ms (0 ms spent in bootstraps)
+19/01/25 15:23:09 INFO ShuffleBlockFetcherIterator: Started 4 remote fetches in 41 ms
+19/01/25 15:23:09 INFO ShuffleBlockFetcherIterator: Started 4 remote fetches in 44 ms
+19/01/25 15:23:09 INFO ShuffleBlockFetcherIterator: Started 4 remote fetches in 44 ms
+19/01/25 15:23:09 INFO ShuffleBlockFetcherIterator: Started 4 remote fetches in 46 ms
+19/01/25 15:23:10 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.DirectFileOutputCommitter
+19/01/25 15:23:10 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.DirectFileOutputCommitter
+19/01/25 15:23:10 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.DirectFileOutputCommitter
+19/01/25 15:23:10 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.DirectFileOutputCommitter
+19/01/25 15:23:11 INFO MultipartUploadOutputStream: close closed:false s3://mr-input-hw1/output/part-00016
+19/01/25 15:23:11 INFO MultipartUploadOutputStream: close closed:false s3://mr-input-hw1/output/part-00019
+19/01/25 15:23:11 INFO MultipartUploadOutputStream: close closed:false s3://mr-input-hw1/output/part-00010
+19/01/25 15:23:11 INFO MultipartUploadOutputStream: close closed:false s3://mr-input-hw1/output/part-00013
+19/01/25 15:23:12 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20190125152213_0005_m_000013_0
+19/01/25 15:23:12 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20190125152213_0005_m_000010_0
+19/01/25 15:23:12 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20190125152213_0005_m_000019_0
+19/01/25 15:23:12 INFO Executor: Finished task 10.0 in stage 1.0 (TID 30). 1545 bytes result sent to driver
+19/01/25 15:23:12 INFO Executor: Finished task 19.0 in stage 1.0 (TID 39). 1502 bytes result sent to driver
+19/01/25 15:23:12 INFO Executor: Finished task 13.0 in stage 1.0 (TID 33). 1502 bytes result sent to driver
+19/01/25 15:23:12 INFO SparkHadoopMapRedUtil: No need to commit output of task because needsTaskCommit=false: attempt_20190125152213_0005_m_000016_0
+19/01/25 15:23:12 INFO Executor: Finished task 16.0 in stage 1.0 (TID 36). 1502 bytes result sent to driver
+19/01/25 15:23:12 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+19/01/25 15:23:12 INFO MemoryStore: MemoryStore cleared
+19/01/25 15:23:12 INFO BlockManager: BlockManager stopped
+19/01/25 15:23:12 INFO ShutdownHookManager: Shutdown hook called
+19/01/25 15:23:12 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1548428999420_0001/spark-6882031a-4a93-4ceb-99dc-d430f8855fc4

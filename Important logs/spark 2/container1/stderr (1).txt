@@ -1,0 +1,113 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/12/__spark_libs__760306900704708819.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19/01/25 15:24:20 INFO SignalUtils: Registered signal handler for TERM
+19/01/25 15:24:20 INFO SignalUtils: Registered signal handler for HUP
+19/01/25 15:24:20 INFO SignalUtils: Registered signal handler for INT
+19/01/25 15:24:21 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/01/25 15:24:21 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/01/25 15:24:21 INFO SecurityManager: Changing view acls groups to: 
+19/01/25 15:24:21 INFO SecurityManager: Changing modify acls groups to: 
+19/01/25 15:24:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/01/25 15:24:21 INFO ApplicationMaster: Preparing Local resources
+19/01/25 15:24:22 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1548428999420_0002_000001
+19/01/25 15:24:23 INFO RMProxy: Connecting to ResourceManager at ip-172-31-12-227.ec2.internal/172.31.12.227:8030
+19/01/25 15:24:23 INFO YarnRMClient: Registering the ApplicationMaster
+19/01/25 15:24:23 INFO TransportClientFactory: Successfully created connection to ip-172-31-12-227.ec2.internal/172.31.12.227:46435 after 101 ms (0 ms spent in bootstraps)
+19/01/25 15:24:23 INFO ApplicationMaster: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>/usr/share/aws/aws-java-sdk/*<CPS>{{PWD}}/__spark_conf__/__hadoop_conf__
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-12-227.ec2.internal:8020/user/hadoop/.sparkStaging/application_1548428999420_0002
+    SPARK_USER -> hadoop
+    SPARK_PUBLIC_DNS -> ip-172-31-9-171.ec2.internal
+
+  command:
+    LD_LIBRARY_PATH=\"/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH\" \ 
+      {{JAVA_HOME}}/bin/java \ 
+      -server \ 
+      -Xmx5120m \ 
+      '-verbose:gc' \ 
+      '-XX:+PrintGCDetails' \ 
+      '-XX:+PrintGCDateStamps' \ 
+      '-XX:+UseConcMarkSweepGC' \ 
+      '-XX:CMSInitiatingOccupancyFraction=70' \ 
+      '-XX:MaxHeapFreeRatio=70' \ 
+      '-XX:+CMSClassUnloadingEnabled' \ 
+      '-XX:OnOutOfMemoryError=kill -9 %p' \ 
+      -Djava.io.tmpdir={{PWD}}/tmp \ 
+      '-Dspark.history.ui.port=18080' \ 
+      '-Dspark.driver.port=46435' \ 
+      -Dspark.yarn.app.container.log.dir=<LOG_DIR> \ 
+      org.apache.spark.executor.CoarseGrainedExecutorBackend \ 
+      --driver-url \ 
+      spark://CoarseGrainedScheduler@ip-172-31-12-227.ec2.internal:46435 \ 
+      --executor-id \ 
+      <executorId> \ 
+      --hostname \ 
+      <hostname> \ 
+      --cores \ 
+      4 \ 
+      --app-id \ 
+      application_1548428999420_0002 \ 
+      --user-class-path \ 
+      file:$PWD/__app__.jar \ 
+      1><LOG_DIR>/stdout \ 
+      2><LOG_DIR>/stderr
+
+  resources:
+    __spark_libs__ -> resource { scheme: "hdfs" host: "ip-172-31-12-227.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1548428999420_0002/__spark_libs__760306900704708819.zip" } size: 229091230 timestamp: 1548429857109 type: ARCHIVE visibility: PRIVATE
+    __spark_conf__ -> resource { scheme: "hdfs" host: "ip-172-31-12-227.ec2.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1548428999420_0002/__spark_conf__.zip" } size: 210786 timestamp: 1548429857344 type: ARCHIVE visibility: PRIVATE
+
+===============================================================================
+19/01/25 15:24:23 INFO Utils: Using initial executors = 0, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/01/25 15:24:24 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 3000, initial allocation : 200) intervals
+19/01/25 15:24:28 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/01/25 15:24:28 INFO YarnAllocator: Will request 1 executor container(s), each with 4 core(s) and 5632 MB memory (including 512 MB of overhead)
+19/01/25 15:24:28 INFO YarnAllocator: Submitted container request for host *.
+19/01/25 15:24:29 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/01/25 15:24:29 INFO YarnAllocator: Will request 2 executor container(s), each with 4 core(s) and 5632 MB memory (including 512 MB of overhead)
+19/01/25 15:24:29 INFO YarnAllocator: Submitted container request for host *.
+19/01/25 15:24:29 INFO YarnAllocator: Submitted container request for host *.
+19/01/25 15:24:29 INFO AMRMClientImpl: Received new token for : ip-172-31-6-58.ec2.internal:8041
+19/01/25 15:24:29 INFO YarnAllocator: Launching container container_1548428999420_0002_01_000002 on host ip-172-31-6-58.ec2.internal for executor with ID 1
+19/01/25 15:24:29 INFO YarnAllocator: Received 1 containers from YARN, launching executors on 1 of them.
+19/01/25 15:24:29 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/01/25 15:24:30 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/01/25 15:24:30 INFO YarnAllocator: Will request 2 executor container(s), each with 4 core(s) and 5632 MB memory (including 512 MB of overhead)
+19/01/25 15:24:30 INFO YarnAllocator: Submitted container request for host *.
+19/01/25 15:24:30 INFO YarnAllocator: Submitted container request for host *.
+19/01/25 15:24:30 INFO AMRMClientImpl: Received new token for : ip-172-31-8-9.ec2.internal:8041
+19/01/25 15:24:30 INFO AMRMClientImpl: Received new token for : ip-172-31-15-145.ec2.internal:8041
+19/01/25 15:24:30 INFO AMRMClientImpl: Received new token for : ip-172-31-9-171.ec2.internal:8041
+19/01/25 15:24:30 INFO YarnAllocator: Launching container container_1548428999420_0002_01_000003 on host ip-172-31-8-9.ec2.internal for executor with ID 2
+19/01/25 15:24:30 INFO YarnAllocator: Launching container container_1548428999420_0002_01_000004 on host ip-172-31-8-9.ec2.internal for executor with ID 3
+19/01/25 15:24:30 INFO YarnAllocator: Launching container container_1548428999420_0002_01_000005 on host ip-172-31-9-171.ec2.internal for executor with ID 4
+19/01/25 15:24:30 INFO YarnAllocator: Launching container container_1548428999420_0002_01_000006 on host ip-172-31-15-145.ec2.internal for executor with ID 5
+19/01/25 15:24:30 INFO YarnAllocator: Received 4 containers from YARN, launching executors on 4 of them.
+19/01/25 15:24:30 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/01/25 15:24:30 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/01/25 15:24:30 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/01/25 15:24:30 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+19/01/25 15:24:33 INFO AMRMClientImpl: Received new token for : ip-172-31-10-234.ec2.internal:8041
+19/01/25 15:24:33 INFO YarnAllocator: Received 4 containers from YARN, launching executors on 0 of them.
+19/01/25 15:24:46 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/01/25 15:24:47 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/01/25 15:24:47 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/01/25 15:25:11 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/01/25 15:25:19 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+19/01/25 15:25:24 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+19/01/25 15:25:24 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+19/01/25 15:25:25 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+19/01/25 15:25:25 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+19/01/25 15:25:25 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+19/01/25 15:25:25 INFO ApplicationMaster$AMEndpoint: Driver terminated or disconnected! Shutting down. ip-172-31-12-227.ec2.internal:46435
+19/01/25 15:25:25 INFO ApplicationMaster$AMEndpoint: Driver terminated or disconnected! Shutting down. ip-172-31-12-227.ec2.internal:46435
+19/01/25 15:25:25 INFO ApplicationMaster: Final app status: SUCCEEDED, exitCode: 0
+19/01/25 15:25:25 INFO ApplicationMaster: Unregistering ApplicationMaster with SUCCEEDED
+19/01/25 15:25:25 INFO AMRMClientImpl: Waiting for application to be successfully unregistered.
+19/01/25 15:25:26 INFO ApplicationMaster: Deleting staging directory hdfs://ip-172-31-12-227.ec2.internal:8020/user/hadoop/.sparkStaging/application_1548428999420_0002
+19/01/25 15:25:26 INFO ShutdownHookManager: Shutdown hook called
