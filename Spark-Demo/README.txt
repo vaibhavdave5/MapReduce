@@ -1,10 +1,12 @@
-Hadoop MapReduce WordCount Demo
-Example code for CS6240
-Fall 2018
+For CS6240 Spring 2019 HW1
+
 
 Code author
 -----------
 Joe Sackett
+
+Modified by
+Vaibhav Dave
 
 Installation
 ------------

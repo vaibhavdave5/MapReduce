@@ -1,4 +1,4 @@
-# Makefile for Spark WordCount project.
+# Makefile.
 
 # Customize these paths for your environment.
 # -----------------------------------------------------------
@@ -12,7 +12,7 @@ local.master=local[4]
 local.input=input
 local.output=output
 # Pseudo-Cluster Execution
-hdfs.user.name=joe
+hdfs.user.name=vaibhav
 hdfs.input=input
 hdfs.output=output
 # AWS EMR Execution
@@ -22,7 +22,7 @@ aws.input=input
 aws.output=output
 aws.log.dir=log
 aws.num.nodes=1
-aws.instance.type=m3.xlarge
+aws.instance.type=m4.xlarge
 # -----------------------------------------------------------
 
 # Compiles code and builds jar (with dependencies).
@@ -36,7 +36,7 @@ clean-local-output:
 
 # Runs standalone
 local: jar clean-local-output
-	spark-submit --class ${job.name} --master ${local.master} --name "${app.name}" ${jar.name} ${local.input} ${local.output}
+	spark-submit --class ${job.name} --name "${app.name}" ${jar.name} ${local.input} ${local.output}
 
 # Start HDFS
 start-hdfs:
