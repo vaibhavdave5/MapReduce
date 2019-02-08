@@ -131,7 +131,7 @@ public class TriangleCount extends Configured implements Tool {
 			}
 			if(toEdges>0) {
 				count = count + fromEdges;
-				context.getCounter(CounterName.Repeated).increment(fromEdges);
+				context.getCounter(CounterName.Reapeted).increment(fromEdges);
 			}
 		}
 		
