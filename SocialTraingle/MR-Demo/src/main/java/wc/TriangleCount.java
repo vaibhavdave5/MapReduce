@@ -25,7 +25,7 @@ import org.apache.hadoop.conf.Configuration;
 
 public class TriangleCount extends Configured implements Tool {
 	private static final Logger logger = LogManager.getLogger(TriangleCount.class);
-	private static int max = 1000;
+	private final static int maxFilter = 40000;
 
 	public static class FindSinglePathMapper extends Mapper<Object, Text, Text, Text> {
 
@@ -40,11 +40,13 @@ public class TriangleCount extends Configured implements Tool {
 				 * Just like explained in lecture with the airplane example the to and from
 				 * journey the triangle also has its to and from trail
 				 */
-				
+				if(Integer.parseInt(ids[0]) < maxFilter && Integer.parseInt(ids[1])<maxFilter)
+				{
 				Text from = new Text(ids[0] + "-" + ids[1] + "-" + EdgeDirection.From.toString());
 				Text to = new Text(ids[0] + "-" + ids[1] + "-" + EdgeDirection.To.toString());
 				context.write(new Text(ids[0]), from);
 				context.write(new Text(ids[1]), to);
+				}
 			
 		}
 	}
@@ -90,10 +92,13 @@ public class TriangleCount extends Configured implements Tool {
 
 			// Split on comma since input is from a CSV file.
 			final String[] nodes = value.toString().split(",");
+			
+			if(Integer.parseInt(nodes[0]) < maxFilter && Integer.parseInt(nodes[1])<maxFilter)
+			{	
 	
 					Text edgeValsTo = new Text(EdgeDirection.To.toString());					
 					context.write(new Text(nodes[1]+","+nodes[0]),edgeValsTo );
-
+			}
 				
 		}
 	}
