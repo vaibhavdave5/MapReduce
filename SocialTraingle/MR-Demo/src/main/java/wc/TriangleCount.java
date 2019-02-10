@@ -25,6 +25,7 @@ import org.apache.hadoop.conf.Configuration;
 
 public class TriangleCount extends Configured implements Tool {
 	private static final Logger logger = LogManager.getLogger(TriangleCount.class);
+	private static int max = 1000;
 
 	public static class FindSinglePathMapper extends Mapper<Object, Text, Text, Text> {
 
@@ -39,7 +40,7 @@ public class TriangleCount extends Configured implements Tool {
 				 * Just like explained in lecture with the airplane example the to and from
 				 * journey the triangle also has its to and from trail
 				 */
-
+				
 				Text from = new Text(ids[0] + "-" + ids[1] + "-" + EdgeDirection.From.toString());
 				Text to = new Text(ids[0] + "-" + ids[1] + "-" + EdgeDirection.To.toString());
 				context.write(new Text(ids[0]), from);
@@ -159,7 +160,7 @@ public class TriangleCount extends Configured implements Tool {
 		job.setReducerClass(Path2Reducer.class);		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
-		FileInputFormat.addInputPath(job, new Path("input/edges1.csv"));
+		FileInputFormat.addInputPath(job, new Path("input/edges.csv"));
 		FileOutputFormat.setOutputPath(job, new Path("output"));
 		if(! job.waitForCompletion(true)) {
 			throw new Exception("MR job1 failed");
@@ -169,7 +170,7 @@ public class TriangleCount extends Configured implements Tool {
 		job2.setJarByClass(TriangleCount.class);
 	
 		job2.setReducerClass(CompleteTriangleReducer.class);
-		MultipleInputs.addInputPath(job2, new Path("input/edges1.csv"), TextInputFormat.class, CompleteTriangleMapper.class);
+		MultipleInputs.addInputPath(job2, new Path("input/edges.csv"), TextInputFormat.class, CompleteTriangleMapper.class);
 		MultipleInputs.addInputPath(job2, new Path("output"), TextInputFormat.class, Path2EdgeMapper.class);
 		//+"/part-r-00000"
 		job2.setOutputKeyClass(Text.class);
