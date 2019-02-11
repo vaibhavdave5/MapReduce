@@ -3,6 +3,8 @@ package wc;
 import java.util.*;
 import java.io.*;
 import java.net.URI;
+import java.net.URL;
+import java.net.URLConnection;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
@@ -23,7 +25,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class TwitterRepJoin extends Configured implements Tool {
 	private static final Logger logger = LogManager.getLogger(TwitterRepJoin.class);
-	private static int max = 100;
+	private static int max = 10000;
 	public static class ReplicatedJoinMapper extends Mapper<Object, Text, Text, Text> {
 			
 		private Map<String, List<String>> idFollower = new HashMap<>();
@@ -36,9 +38,8 @@ public class TwitterRepJoin extends Configured implements Tool {
 		@Override
 		public void setup(Context context) throws IOException,InterruptedException {
 			URI[] uris = context.getCacheFiles();	
-			
-			BufferedReader read = new BufferedReader(new FileReader(new File(uris[0].getPath())));
-			
+						
+			BufferedReader read = new BufferedReader(new FileReader(new File("./theFile")));
 			String line = read.readLine();
 			while(line != null) {
 				String[] users = line.split(",");
@@ -100,7 +101,8 @@ public class TwitterRepJoin extends Configured implements Tool {
 	public int run(String[] args) throws Exception {
 		final Configuration conf = getConf();
 		Job job = Job.getInstance(conf, "TwitterRepJoin");
-		job.addCacheFile(new Path("/home/vaibhav/Desktop/lspdpNew/parallelDataProcessing/SocialTraingle/MR-Demo/input/edges.csv").toUri());
+		job.addCacheFile(new URI("s3://mr-input-2/edges.csv" + "#theFile"));
+	//	job.addCacheFile(new Path("s3://mr-input-2/edges4.csv").toUri());
 		job.setJarByClass(TwitterRepJoin.class);
 		job.setMapperClass(ReplicatedJoinMapper.class);
 		job.setNumReduceTasks(0);
@@ -108,8 +110,8 @@ public class TwitterRepJoin extends Configured implements Tool {
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 		
-		FileInputFormat.addInputPath(job, new Path("input/edges.csv"));
-		FileOutputFormat.setOutputPath(job, new Path("output"));
+		FileInputFormat.addInputPath(job, new Path("s3://mr-input-2/edges.csv"));
+		FileOutputFormat.setOutputPath(job, new Path("output11"));
 		
 		job.waitForCompletion(true);
 		

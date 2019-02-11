@@ -25,7 +25,7 @@ import org.apache.hadoop.conf.Configuration;
 
 public class TriangleCount extends Configured implements Tool {
 	private static final Logger logger = LogManager.getLogger(TriangleCount.class);
-	private final static int maxFilter = 40000;
+	private final static int maxFilter = 20000;
 
 	public static class FindSinglePathMapper extends Mapper<Object, Text, Text, Text> {
 
@@ -165,8 +165,8 @@ public class TriangleCount extends Configured implements Tool {
 		job.setReducerClass(Path2Reducer.class);		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
-		FileInputFormat.addInputPath(job, new Path("input/edges.csv"));
-		FileOutputFormat.setOutputPath(job, new Path("output"));
+		FileInputFormat.addInputPath(job, new Path("s3://mr-input-2/edges.csv"));
+		FileOutputFormat.setOutputPath(job, new Path("output1"));
 		if(! job.waitForCompletion(true)) {
 			throw new Exception("MR job1 failed");
 		}
@@ -175,12 +175,12 @@ public class TriangleCount extends Configured implements Tool {
 		job2.setJarByClass(TriangleCount.class);
 	
 		job2.setReducerClass(CompleteTriangleReducer.class);
-		MultipleInputs.addInputPath(job2, new Path("input/edges.csv"), TextInputFormat.class, CompleteTriangleMapper.class);
-		MultipleInputs.addInputPath(job2, new Path("output"), TextInputFormat.class, Path2EdgeMapper.class);
+		MultipleInputs.addInputPath(job2, new Path("s3://mr-input-2/edges.csv"), TextInputFormat.class, CompleteTriangleMapper.class);
+		MultipleInputs.addInputPath(job2, new Path("output1"), TextInputFormat.class, Path2EdgeMapper.class);
 		//+"/part-r-00000"
 		job2.setOutputKeyClass(Text.class);
 		job2.setOutputValueClass(Text.class);
-		FileOutputFormat.setOutputPath(job2, new Path("output"+"-Triangle"));
+		FileOutputFormat.setOutputPath(job2, new Path("output1"+"-Triangle"));
 		return job2.waitForCompletion(true) ? 0 : 1;
 	}
 

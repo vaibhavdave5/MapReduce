@@ -1,0 +1,607 @@
+2019-02-09 22:23:06 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000125_0 decomp: 56284627 len: 56284631 to MEMORY
+2019-02-09 22:23:06 [localfetcher#2] INFO  InMemoryMapOutput - Read 56284627 bytes from map-output for attempt_local866908892_0002_m_000125_0
+2019-02-09 22:23:06 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 56284627, inMemoryMapOutputs.size() -> 7, commitMemory -> 220481901, usedMemory ->1322863906
+2019-02-09 22:23:06 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000126_0 decomp: 56213548 len: 56213552 to MEMORY
+2019-02-09 22:23:06 [localfetcher#2] INFO  InMemoryMapOutput - Read 56213548 bytes from map-output for attempt_local866908892_0002_m_000126_0
+2019-02-09 22:23:06 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 56213548, inMemoryMapOutputs.size() -> 8, commitMemory -> 276766528, usedMemory ->1379077454
+2019-02-09 22:23:06 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000228_0 decomp: 54494963 len: 54494967 to MEMORY
+2019-02-09 22:23:06 [localfetcher#2] INFO  InMemoryMapOutput - Read 54494963 bytes from map-output for attempt_local866908892_0002_m_000228_0
+2019-02-09 22:23:06 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54494963, inMemoryMapOutputs.size() -> 9, commitMemory -> 332980076, usedMemory ->1433572417
+2019-02-09 22:23:06 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000015_0 decomp: 54240205 len: 54240209 to MEMORY
+2019-02-09 22:23:07 [localfetcher#2] INFO  InMemoryMapOutput - Read 54240205 bytes from map-output for attempt_local866908892_0002_m_000015_0
+2019-02-09 22:23:07 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54240205, inMemoryMapOutputs.size() -> 10, commitMemory -> 387475039, usedMemory ->1487812622
+2019-02-09 22:23:07 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000117_0 decomp: 54634777 len: 54634781 to MEMORY
+2019-02-09 22:23:07 [localfetcher#2] INFO  InMemoryMapOutput - Read 54634777 bytes from map-output for attempt_local866908892_0002_m_000117_0
+2019-02-09 22:23:07 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54634777, inMemoryMapOutputs.size() -> 11, commitMemory -> 441715244, usedMemory ->1542447399
+2019-02-09 22:23:07 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000118_0 decomp: 54666252 len: 54666256 to MEMORY
+2019-02-09 22:23:07 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000117_0 succeeded at 52103.79 MB/s) Aggregated copy rate(110 of 230 at 5482753.00 MB/s)
+2019-02-09 22:23:07 [localfetcher#2] INFO  InMemoryMapOutput - Read 54666252 bytes from map-output for attempt_local866908892_0002_m_000118_0
+2019-02-09 22:23:07 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54666252, inMemoryMapOutputs.size() -> 12, commitMemory -> 496350021, usedMemory ->1597113651
+2019-02-09 22:23:07 [localfetcher#2] INFO  LocalFetcher - fetcher#2 - MergeManager returned Status.WAIT ...
+2019-02-09 22:23:07 [main] INFO  Job -  map 100% reduce 16%
+2019-02-09 22:23:13 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000118_0 succeeded at 52133.80 MB/s) Aggregated copy rate(111 of 230 at 5534886.50 MB/s)
+2019-02-09 22:23:19 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000118_0 succeeded at 52133.80 MB/s) Aggregated copy rate(111 of 230 at 5534886.50 MB/s)
+2019-02-09 22:23:25 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000118_0 succeeded at 52133.80 MB/s) Aggregated copy rate(111 of 230 at 5534886.50 MB/s)
+2019-02-09 22:23:29 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - attempt_local866908892_0002_r_000000_0 Merge of the 22 files in-memory complete. Local file is /tmp/hadoop-vaibhav/mapred/local/localRunner/vaibhav/jobcache/job_local866908892_0002/attempt_local866908892_0002_r_000000_0/output/map_226.out.merged of size 1046097346
+2019-02-09 22:23:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000220_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000220_0
+2019-02-09 22:23:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 13, commitMemory -> 551016273, usedMemory ->551016275
+2019-02-09 22:23:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000218_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000218_0
+2019-02-09 22:23:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 14, commitMemory -> 551016275, usedMemory ->551016277
+2019-02-09 22:23:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000013_0 decomp: 54706106 len: 54706110 to MEMORY
+2019-02-09 22:23:30 [localfetcher#2] INFO  InMemoryMapOutput - Read 54706106 bytes from map-output for attempt_local866908892_0002_m_000013_0
+2019-02-09 22:23:30 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54706106, inMemoryMapOutputs.size() -> 15, commitMemory -> 551016277, usedMemory ->605722383
+2019-02-09 22:23:30 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000014_0 decomp: 54647469 len: 54647473 to MEMORY
+2019-02-09 22:23:30 [localfetcher#2] INFO  InMemoryMapOutput - Read 54647469 bytes from map-output for attempt_local866908892_0002_m_000014_0
+2019-02-09 22:23:30 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54647469, inMemoryMapOutputs.size() -> 16, commitMemory -> 605722383, usedMemory ->660369852
+2019-02-09 22:23:30 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000219_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:30 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000219_0
+2019-02-09 22:23:30 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 17, commitMemory -> 660369852, usedMemory ->660369854
+2019-02-09 22:23:30 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000116_0 decomp: 54544096 len: 54544100 to MEMORY
+2019-02-09 22:23:31 [localfetcher#2] INFO  InMemoryMapOutput - Read 54544096 bytes from map-output for attempt_local866908892_0002_m_000116_0
+2019-02-09 22:23:31 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54544096, inMemoryMapOutputs.size() -> 18, commitMemory -> 660369854, usedMemory ->714913950
+2019-02-09 22:23:31 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000018_0 decomp: 54489544 len: 54489548 to MEMORY
+2019-02-09 22:23:31 [localfetcher#2] INFO  InMemoryMapOutput - Read 54489544 bytes from map-output for attempt_local866908892_0002_m_000018_0
+2019-02-09 22:23:31 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54489544, inMemoryMapOutputs.size() -> 19, commitMemory -> 714913950, usedMemory ->769403494
+2019-02-09 22:23:31 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000223_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:31 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000223_0
+2019-02-09 22:23:31 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 20, commitMemory -> 769403494, usedMemory ->769403496
+2019-02-09 22:23:31 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000120_0 decomp: 54729665 len: 54729669 to MEMORY
+2019-02-09 22:23:31 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000223_0 succeeded at 0.01 MB/s) Aggregated copy rate(119 of 230 at 5743156.50 MB/s)
+2019-02-09 22:23:31 [localfetcher#2] INFO  InMemoryMapOutput - Read 54729665 bytes from map-output for attempt_local866908892_0002_m_000120_0
+2019-02-09 22:23:31 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54729665, inMemoryMapOutputs.size() -> 21, commitMemory -> 769403496, usedMemory ->824133161
+2019-02-09 22:23:31 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000019_0 decomp: 54665026 len: 54665030 to MEMORY
+2019-02-09 22:23:31 [main] INFO  Job -  map 100% reduce 17%
+2019-02-09 22:23:31 [localfetcher#2] INFO  InMemoryMapOutput - Read 54665026 bytes from map-output for attempt_local866908892_0002_m_000019_0
+2019-02-09 22:23:31 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54665026, inMemoryMapOutputs.size() -> 22, commitMemory -> 824133161, usedMemory ->878798187
+2019-02-09 22:23:31 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000121_0 decomp: 54643956 len: 54643960 to MEMORY
+2019-02-09 22:23:32 [localfetcher#2] INFO  InMemoryMapOutput - Read 54643956 bytes from map-output for attempt_local866908892_0002_m_000121_0
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54643956, inMemoryMapOutputs.size() -> 23, commitMemory -> 878798187, usedMemory ->933442143
+2019-02-09 22:23:32 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000119_0 decomp: 54662950 len: 54662954 to MEMORY
+2019-02-09 22:23:32 [localfetcher#2] INFO  InMemoryMapOutput - Read 54662950 bytes from map-output for attempt_local866908892_0002_m_000119_0
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54662950, inMemoryMapOutputs.size() -> 24, commitMemory -> 933442143, usedMemory ->988105093
+2019-02-09 22:23:32 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000016_0 decomp: 54465225 len: 54465229 to MEMORY
+2019-02-09 22:23:32 [localfetcher#2] INFO  InMemoryMapOutput - Read 54465225 bytes from map-output for attempt_local866908892_0002_m_000016_0
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54465225, inMemoryMapOutputs.size() -> 25, commitMemory -> 988105093, usedMemory ->1042570318
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - Starting inMemoryMerger's merge since commitMemory=1042570318 > mergeThreshold=1037917248. Current usedMemory=1042570318
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeThread - InMemoryMerger - Thread to merge in-memory shuffled map-outputs: Starting merge with 25 segments, while ignoring 0 segments
+2019-02-09 22:23:32 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000221_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:32 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - Initiating in-memory merge with 25 segments...
+2019-02-09 22:23:32 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Merging 25 sorted segments
+2019-02-09 22:23:32 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Down to the last merge-pass, with 19 segments left of total size: 1042570055 bytes
+2019-02-09 22:23:32 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000221_0
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1042570308
+2019-02-09 22:23:32 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000222_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:32 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000222_0
+2019-02-09 22:23:32 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 2, commitMemory -> 2, usedMemory ->1042570310
+2019-02-09 22:23:32 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000017_0 decomp: 54613231 len: 54613235 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 54613231 bytes from map-output for attempt_local866908892_0002_m_000017_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54613231, inMemoryMapOutputs.size() -> 3, commitMemory -> 4, usedMemory ->1097183541
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000111_0 decomp: 54594143 len: 54594147 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 54594143 bytes from map-output for attempt_local866908892_0002_m_000111_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54594143, inMemoryMapOutputs.size() -> 4, commitMemory -> 54613235, usedMemory ->1151777684
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000008_0 decomp: 54776199 len: 54776203 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 54776199 bytes from map-output for attempt_local866908892_0002_m_000008_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54776199, inMemoryMapOutputs.size() -> 5, commitMemory -> 109207378, usedMemory ->1206553883
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000213_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000213_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 6, commitMemory -> 163983577, usedMemory ->1206553885
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000214_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000214_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 7, commitMemory -> 163983579, usedMemory ->1206553887
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000009_0 decomp: 54710680 len: 54710684 to MEMORY
+2019-02-09 22:23:33 [localfetcher#2] INFO  InMemoryMapOutput - Read 54710680 bytes from map-output for attempt_local866908892_0002_m_000009_0
+2019-02-09 22:23:33 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54710680, inMemoryMapOutputs.size() -> 8, commitMemory -> 163983581, usedMemory ->1261264567
+2019-02-09 22:23:33 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000007_0 decomp: 54901484 len: 54901488 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54901484 bytes from map-output for attempt_local866908892_0002_m_000007_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54901484, inMemoryMapOutputs.size() -> 9, commitMemory -> 218694261, usedMemory ->1316166051
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000109_0 decomp: 54812028 len: 54812032 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54812028 bytes from map-output for attempt_local866908892_0002_m_000109_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54812028, inMemoryMapOutputs.size() -> 10, commitMemory -> 273595745, usedMemory ->1370978079
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000110_0 decomp: 54549962 len: 54549966 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54549962 bytes from map-output for attempt_local866908892_0002_m_000110_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54549962, inMemoryMapOutputs.size() -> 11, commitMemory -> 328407773, usedMemory ->1425528041
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000212_0 decomp: 28272 len: 28276 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 28272 bytes from map-output for attempt_local866908892_0002_m_000212_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 28272, inMemoryMapOutputs.size() -> 12, commitMemory -> 382957735, usedMemory ->1425556313
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000114_0 decomp: 54653211 len: 54653215 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54653211 bytes from map-output for attempt_local866908892_0002_m_000114_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54653211, inMemoryMapOutputs.size() -> 13, commitMemory -> 382986007, usedMemory ->1480209524
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000216_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000216_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 14, commitMemory -> 437639218, usedMemory ->1480209526
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000115_0 decomp: 54637376 len: 54637380 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54637376 bytes from map-output for attempt_local866908892_0002_m_000115_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54637376, inMemoryMapOutputs.size() -> 15, commitMemory -> 437639220, usedMemory ->1534846902
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000012_0 decomp: 54365612 len: 54365616 to MEMORY
+2019-02-09 22:23:34 [localfetcher#2] INFO  InMemoryMapOutput - Read 54365612 bytes from map-output for attempt_local866908892_0002_m_000012_0
+2019-02-09 22:23:34 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54365612, inMemoryMapOutputs.size() -> 16, commitMemory -> 492276596, usedMemory ->1589212514
+2019-02-09 22:23:34 [localfetcher#2] INFO  LocalFetcher - fetcher#2 - MergeManager returned Status.WAIT ...
+2019-02-09 22:23:37 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000012_0 succeeded at 51847.09 MB/s) Aggregated copy rate(140 of 230 at 6524988.00 MB/s)
+2019-02-09 22:23:37 [main] INFO  Job -  map 100% reduce 20%
+2019-02-09 22:23:43 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000012_0 succeeded at 51847.09 MB/s) Aggregated copy rate(140 of 230 at 6524988.00 MB/s)
+2019-02-09 22:23:49 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000012_0 succeeded at 51847.09 MB/s) Aggregated copy rate(140 of 230 at 6524988.00 MB/s)
+2019-02-09 22:23:55 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000012_0 succeeded at 51847.09 MB/s) Aggregated copy rate(140 of 230 at 6524988.00 MB/s)
+2019-02-09 22:23:57 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - attempt_local866908892_0002_r_000000_0 Merge of the 25 files in-memory complete. Local file is /tmp/hadoop-vaibhav/mapred/local/localRunner/vaibhav/jobcache/job_local866908892_0002/attempt_local866908892_0002_r_000000_0/output/map_225.out.merged of size 1042570274
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000217_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000217_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 17, commitMemory -> 546642208, usedMemory ->546642210
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000010_0 decomp: 54709131 len: 54709135 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54709131 bytes from map-output for attempt_local866908892_0002_m_000010_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54709131, inMemoryMapOutputs.size() -> 18, commitMemory -> 546642210, usedMemory ->601351341
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000215_0 decomp: 2 len: 6 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 2 bytes from map-output for attempt_local866908892_0002_m_000215_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 19, commitMemory -> 601351341, usedMemory ->601351343
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000112_0 decomp: 54494586 len: 54494590 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54494586 bytes from map-output for attempt_local866908892_0002_m_000112_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54494586, inMemoryMapOutputs.size() -> 20, commitMemory -> 601351343, usedMemory ->655845929
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000011_0 decomp: 54780077 len: 54780081 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54780077 bytes from map-output for attempt_local866908892_0002_m_000011_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54780077, inMemoryMapOutputs.size() -> 21, commitMemory -> 655845929, usedMemory ->710626006
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000113_0 decomp: 54509795 len: 54509799 to MEMORY
+2019-02-09 22:23:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54509795 bytes from map-output for attempt_local866908892_0002_m_000113_0
+2019-02-09 22:23:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54509795, inMemoryMapOutputs.size() -> 22, commitMemory -> 710626006, usedMemory ->765135801
+2019-02-09 22:23:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000002_0 decomp: 54580757 len: 54580761 to MEMORY
+2019-02-09 22:23:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54580757 bytes from map-output for attempt_local866908892_0002_m_000002_0
+2019-02-09 22:23:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54580757, inMemoryMapOutputs.size() -> 23, commitMemory -> 765135801, usedMemory ->819716558
+2019-02-09 22:23:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000207_0 decomp: 225990 len: 225994 to MEMORY
+2019-02-09 22:23:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 225990 bytes from map-output for attempt_local866908892_0002_m_000207_0
+2019-02-09 22:23:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 225990, inMemoryMapOutputs.size() -> 24, commitMemory -> 819716558, usedMemory ->819942548
+2019-02-09 22:23:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000104_0 decomp: 54624499 len: 54624503 to MEMORY
+2019-02-09 22:23:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54624499 bytes from map-output for attempt_local866908892_0002_m_000104_0
+2019-02-09 22:23:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54624499, inMemoryMapOutputs.size() -> 25, commitMemory -> 819942548, usedMemory ->874567047
+2019-02-09 22:23:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000003_0 decomp: 54742941 len: 54742945 to MEMORY
+2019-02-09 22:23:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54742941 bytes from map-output for attempt_local866908892_0002_m_000003_0
+2019-02-09 22:23:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54742941, inMemoryMapOutputs.size() -> 26, commitMemory -> 874567047, usedMemory ->929309988
+2019-02-09 22:23:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000105_0 decomp: 54749596 len: 54749600 to MEMORY
+2019-02-09 22:23:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54749596 bytes from map-output for attempt_local866908892_0002_m_000105_0
+2019-02-09 22:23:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54749596, inMemoryMapOutputs.size() -> 27, commitMemory -> 929309988, usedMemory ->984059584
+2019-02-09 22:23:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000103_0 decomp: 54783872 len: 54783876 to MEMORY
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 54783872 bytes from map-output for attempt_local866908892_0002_m_000103_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54783872, inMemoryMapOutputs.size() -> 28, commitMemory -> 984059584, usedMemory ->1038843456
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - Starting inMemoryMerger's merge since commitMemory=1038843456 > mergeThreshold=1037917248. Current usedMemory=1038843456
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeThread - InMemoryMerger - Thread to merge in-memory shuffled map-outputs: Starting merge with 28 segments, while ignoring 0 segments
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000000_0 decomp: 54905383 len: 54905387 to MEMORY
+2019-02-09 22:23:59 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - Initiating in-memory merge with 28 segments...
+2019-02-09 22:23:59 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Merging 28 sorted segments
+2019-02-09 22:23:59 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Down to the last merge-pass, with 21 segments left of total size: 1038843175 bytes
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 54905383 bytes from map-output for attempt_local866908892_0002_m_000000_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54905383, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1093748825
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000205_0 decomp: 194864 len: 194868 to MEMORY
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 194864 bytes from map-output for attempt_local866908892_0002_m_000205_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 194864, inMemoryMapOutputs.size() -> 2, commitMemory -> 54905383, usedMemory ->1093943689
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000206_0 decomp: 73079 len: 73083 to MEMORY
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 73079 bytes from map-output for attempt_local866908892_0002_m_000206_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 73079, inMemoryMapOutputs.size() -> 3, commitMemory -> 55100247, usedMemory ->1094016768
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000001_0 decomp: 54627672 len: 54627676 to MEMORY
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 54627672 bytes from map-output for attempt_local866908892_0002_m_000001_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54627672, inMemoryMapOutputs.size() -> 4, commitMemory -> 55173326, usedMemory ->1148644440
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000210_0 decomp: 299811 len: 299815 to MEMORY
+2019-02-09 22:23:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 299811 bytes from map-output for attempt_local866908892_0002_m_000210_0
+2019-02-09 22:23:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 299811, inMemoryMapOutputs.size() -> 5, commitMemory -> 109800998, usedMemory ->1148944251
+2019-02-09 22:23:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000005_0 decomp: 54786949 len: 54786953 to MEMORY
+2019-02-09 22:24:00 [localfetcher#2] INFO  InMemoryMapOutput - Read 54786949 bytes from map-output for attempt_local866908892_0002_m_000005_0
+2019-02-09 22:24:00 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54786949, inMemoryMapOutputs.size() -> 6, commitMemory -> 110100809, usedMemory ->1203731200
+2019-02-09 22:24:00 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000006_0 decomp: 54651735 len: 54651739 to MEMORY
+2019-02-09 22:24:00 [localfetcher#2] INFO  InMemoryMapOutput - Read 54651735 bytes from map-output for attempt_local866908892_0002_m_000006_0
+2019-02-09 22:24:00 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54651735, inMemoryMapOutputs.size() -> 7, commitMemory -> 164887758, usedMemory ->1258382935
+2019-02-09 22:24:00 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000211_0 decomp: 5893024 len: 5893028 to MEMORY
+2019-02-09 22:24:00 [localfetcher#2] INFO  InMemoryMapOutput - Read 5893024 bytes from map-output for attempt_local866908892_0002_m_000211_0
+2019-02-09 22:24:00 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 5893024, inMemoryMapOutputs.size() -> 8, commitMemory -> 219539493, usedMemory ->1264275959
+2019-02-09 22:24:00 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000108_0 decomp: 54770527 len: 54770531 to MEMORY
+2019-02-09 22:24:00 [localfetcher#2] INFO  InMemoryMapOutput - Read 54770527 bytes from map-output for attempt_local866908892_0002_m_000108_0
+2019-02-09 22:24:00 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54770527, inMemoryMapOutputs.size() -> 9, commitMemory -> 225432517, usedMemory ->1319046486
+2019-02-09 22:24:00 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000106_0 decomp: 54467375 len: 54467379 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 54467375 bytes from map-output for attempt_local866908892_0002_m_000106_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54467375, inMemoryMapOutputs.size() -> 10, commitMemory -> 280203044, usedMemory ->1373513861
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000208_0 decomp: 416789 len: 416793 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 416789 bytes from map-output for attempt_local866908892_0002_m_000208_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 416789, inMemoryMapOutputs.size() -> 11, commitMemory -> 334670419, usedMemory ->1373930650
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000107_0 decomp: 54713445 len: 54713449 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 54713445 bytes from map-output for attempt_local866908892_0002_m_000107_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54713445, inMemoryMapOutputs.size() -> 12, commitMemory -> 335087208, usedMemory ->1428644095
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000004_0 decomp: 54759716 len: 54759720 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 54759716 bytes from map-output for attempt_local866908892_0002_m_000004_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54759716, inMemoryMapOutputs.size() -> 13, commitMemory -> 389800653, usedMemory ->1483403811
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000209_0 decomp: 159244 len: 159248 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 159244 bytes from map-output for attempt_local866908892_0002_m_000209_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 159244, inMemoryMapOutputs.size() -> 14, commitMemory -> 444560369, usedMemory ->1483563055
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000098_0 decomp: 54759073 len: 54759077 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 54759073 bytes from map-output for attempt_local866908892_0002_m_000098_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54759073, inMemoryMapOutputs.size() -> 15, commitMemory -> 444719613, usedMemory ->1538322128
+2019-02-09 22:24:01 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000098_0 succeeded at 52222.32 MB/s) Aggregated copy rate(167 of 230 at 7470727.50 MB/s)
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000200_0 decomp: 166279 len: 166283 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 166279 bytes from map-output for attempt_local866908892_0002_m_000200_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 166279, inMemoryMapOutputs.size() -> 16, commitMemory -> 499478686, usedMemory ->1538488407
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000099_0 decomp: 54513822 len: 54513826 to MEMORY
+2019-02-09 22:24:01 [localfetcher#2] INFO  InMemoryMapOutput - Read 54513822 bytes from map-output for attempt_local866908892_0002_m_000099_0
+2019-02-09 22:24:01 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54513822, inMemoryMapOutputs.size() -> 17, commitMemory -> 499644965, usedMemory ->1593002229
+2019-02-09 22:24:01 [localfetcher#2] INFO  LocalFetcher - fetcher#2 - MergeManager returned Status.WAIT ...
+2019-02-09 22:24:02 [main] INFO  Job -  map 100% reduce 24%
+2019-02-09 22:24:07 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000099_0 succeeded at 51988.43 MB/s) Aggregated copy rate(169 of 230 at 7522874.50 MB/s)
+2019-02-09 22:24:13 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000099_0 succeeded at 51988.43 MB/s) Aggregated copy rate(169 of 230 at 7522874.50 MB/s)
+2019-02-09 22:24:19 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000099_0 succeeded at 51988.43 MB/s) Aggregated copy rate(169 of 230 at 7522874.50 MB/s)
+2019-02-09 22:24:25 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - attempt_local866908892_0002_r_000000_0 Merge of the 28 files in-memory complete. Local file is /tmp/hadoop-vaibhav/mapred/local/localRunner/vaibhav/jobcache/job_local866908892_0002/attempt_local866908892_0002_r_000000_0/output/map_221.out.merged of size 1038843406
+2019-02-09 22:24:25 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000201_0 decomp: 276235 len: 276239 to MEMORY
+2019-02-09 22:24:25 [localfetcher#2] INFO  InMemoryMapOutput - Read 276235 bytes from map-output for attempt_local866908892_0002_m_000201_0
+2019-02-09 22:24:25 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 276235, inMemoryMapOutputs.size() -> 18, commitMemory -> 554158787, usedMemory ->554435022
+2019-02-09 22:24:25 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000199_0 decomp: 217131 len: 217135 to MEMORY
+2019-02-09 22:24:25 [localfetcher#2] INFO  InMemoryMapOutput - Read 217131 bytes from map-output for attempt_local866908892_0002_m_000199_0
+2019-02-09 22:24:25 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 217131, inMemoryMapOutputs.size() -> 19, commitMemory -> 554435022, usedMemory ->554652153
+2019-02-09 22:24:25 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000096_0 decomp: 54589819 len: 54589823 to MEMORY
+2019-02-09 22:24:25 [localfetcher#2] INFO  InMemoryMapOutput - Read 54589819 bytes from map-output for attempt_local866908892_0002_m_000096_0
+2019-02-09 22:24:25 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54589819, inMemoryMapOutputs.size() -> 20, commitMemory -> 554652153, usedMemory ->609241972
+2019-02-09 22:24:25 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000096_0 succeeded at 52060.91 MB/s) Aggregated copy rate(172 of 230 at 7575406.00 MB/s)
+2019-02-09 22:24:25 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000097_0 decomp: 54702603 len: 54702607 to MEMORY
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 54702603 bytes from map-output for attempt_local866908892_0002_m_000097_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54702603, inMemoryMapOutputs.size() -> 21, commitMemory -> 609241972, usedMemory ->663944575
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000101_0 decomp: 54383874 len: 54383878 to MEMORY
+2019-02-09 22:24:26 [main] INFO  Job -  map 100% reduce 25%
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 54383874 bytes from map-output for attempt_local866908892_0002_m_000101_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54383874, inMemoryMapOutputs.size() -> 22, commitMemory -> 663944575, usedMemory ->718328449
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000102_0 decomp: 54543927 len: 54543931 to MEMORY
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 54543927 bytes from map-output for attempt_local866908892_0002_m_000102_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54543927, inMemoryMapOutputs.size() -> 23, commitMemory -> 718328449, usedMemory ->772872376
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000204_0 decomp: 115593 len: 115597 to MEMORY
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 115593 bytes from map-output for attempt_local866908892_0002_m_000204_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 115593, inMemoryMapOutputs.size() -> 24, commitMemory -> 772872376, usedMemory ->772987969
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000202_0 decomp: 529047 len: 529051 to MEMORY
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 529047 bytes from map-output for attempt_local866908892_0002_m_000202_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 529047, inMemoryMapOutputs.size() -> 25, commitMemory -> 772987969, usedMemory ->773517016
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000203_0 decomp: 533001 len: 533005 to MEMORY
+2019-02-09 22:24:26 [localfetcher#2] INFO  InMemoryMapOutput - Read 533001 bytes from map-output for attempt_local866908892_0002_m_000203_0
+2019-02-09 22:24:26 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 533001, inMemoryMapOutputs.size() -> 26, commitMemory -> 773517016, usedMemory ->774050017
+2019-02-09 22:24:26 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000100_0 decomp: 54517414 len: 54517418 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 54517414 bytes from map-output for attempt_local866908892_0002_m_000100_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54517414, inMemoryMapOutputs.size() -> 27, commitMemory -> 774050017, usedMemory ->828567431
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000194_0 decomp: 382341 len: 382345 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 382341 bytes from map-output for attempt_local866908892_0002_m_000194_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 382341, inMemoryMapOutputs.size() -> 28, commitMemory -> 828567431, usedMemory ->828949772
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000195_0 decomp: 173594 len: 173598 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 173594 bytes from map-output for attempt_local866908892_0002_m_000195_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 173594, inMemoryMapOutputs.size() -> 29, commitMemory -> 828949772, usedMemory ->829123366
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000092_0 decomp: 55072071 len: 55072075 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 55072071 bytes from map-output for attempt_local866908892_0002_m_000092_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55072071, inMemoryMapOutputs.size() -> 30, commitMemory -> 829123366, usedMemory ->884195437
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000090_0 decomp: 54610597 len: 54610601 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 54610597 bytes from map-output for attempt_local866908892_0002_m_000090_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54610597, inMemoryMapOutputs.size() -> 31, commitMemory -> 884195437, usedMemory ->938806034
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000192_0 decomp: 302455 len: 302459 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 302455 bytes from map-output for attempt_local866908892_0002_m_000192_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 302455, inMemoryMapOutputs.size() -> 32, commitMemory -> 938806034, usedMemory ->939108489
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000091_0 decomp: 54701915 len: 54701919 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 54701915 bytes from map-output for attempt_local866908892_0002_m_000091_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54701915, inMemoryMapOutputs.size() -> 33, commitMemory -> 939108489, usedMemory ->993810404
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000193_0 decomp: 343961 len: 343965 to MEMORY
+2019-02-09 22:24:27 [localfetcher#2] INFO  InMemoryMapOutput - Read 343961 bytes from map-output for attempt_local866908892_0002_m_000193_0
+2019-02-09 22:24:27 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 343961, inMemoryMapOutputs.size() -> 34, commitMemory -> 993810404, usedMemory ->994154365
+2019-02-09 22:24:27 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000095_0 decomp: 54699602 len: 54699606 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 54699602 bytes from map-output for attempt_local866908892_0002_m_000095_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54699602, inMemoryMapOutputs.size() -> 35, commitMemory -> 994154365, usedMemory ->1048853967
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - Starting inMemoryMerger's merge since commitMemory=1048853967 > mergeThreshold=1037917248. Current usedMemory=1048853967
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeThread - InMemoryMerger - Thread to merge in-memory shuffled map-outputs: Starting merge with 35 segments, while ignoring 0 segments
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000197_0 decomp: 153468 len: 153472 to MEMORY
+2019-02-09 22:24:28 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - Initiating in-memory merge with 35 segments...
+2019-02-09 22:24:28 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Merging 35 sorted segments
+2019-02-09 22:24:28 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Down to the last merge-pass, with 35 segments left of total size: 1048853536 bytes
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 153468 bytes from map-output for attempt_local866908892_0002_m_000197_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 153468, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1049007435
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000198_0 decomp: 148156 len: 148160 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 148156 bytes from map-output for attempt_local866908892_0002_m_000198_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 148156, inMemoryMapOutputs.size() -> 2, commitMemory -> 153468, usedMemory ->1049155591
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000093_0 decomp: 54825657 len: 54825661 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 54825657 bytes from map-output for attempt_local866908892_0002_m_000093_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54825657, inMemoryMapOutputs.size() -> 3, commitMemory -> 301624, usedMemory ->1103981248
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000094_0 decomp: 54356102 len: 54356106 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 54356102 bytes from map-output for attempt_local866908892_0002_m_000094_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54356102, inMemoryMapOutputs.size() -> 4, commitMemory -> 55127281, usedMemory ->1158337350
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000196_0 decomp: 160642 len: 160646 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 160642 bytes from map-output for attempt_local866908892_0002_m_000196_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 160642, inMemoryMapOutputs.size() -> 5, commitMemory -> 109483383, usedMemory ->1158497992
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000085_0 decomp: 54803302 len: 54803306 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 54803302 bytes from map-output for attempt_local866908892_0002_m_000085_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54803302, inMemoryMapOutputs.size() -> 6, commitMemory -> 109644025, usedMemory ->1213301294
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000086_0 decomp: 54841919 len: 54841923 to MEMORY
+2019-02-09 22:24:28 [localfetcher#2] INFO  InMemoryMapOutput - Read 54841919 bytes from map-output for attempt_local866908892_0002_m_000086_0
+2019-02-09 22:24:28 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54841919, inMemoryMapOutputs.size() -> 7, commitMemory -> 164447327, usedMemory ->1268143213
+2019-02-09 22:24:28 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000188_0 decomp: 54892572 len: 54892576 to MEMORY
+2019-02-09 22:24:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 54892572 bytes from map-output for attempt_local866908892_0002_m_000188_0
+2019-02-09 22:24:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54892572, inMemoryMapOutputs.size() -> 8, commitMemory -> 219289246, usedMemory ->1323035785
+2019-02-09 22:24:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000186_0 decomp: 54870346 len: 54870350 to MEMORY
+2019-02-09 22:24:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 54870346 bytes from map-output for attempt_local866908892_0002_m_000186_0
+2019-02-09 22:24:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54870346, inMemoryMapOutputs.size() -> 9, commitMemory -> 274181818, usedMemory ->1377906131
+2019-02-09 22:24:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000187_0 decomp: 54798086 len: 54798090 to MEMORY
+2019-02-09 22:24:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 54798086 bytes from map-output for attempt_local866908892_0002_m_000187_0
+2019-02-09 22:24:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54798086, inMemoryMapOutputs.size() -> 10, commitMemory -> 329052164, usedMemory ->1432704217
+2019-02-09 22:24:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000084_0 decomp: 54392218 len: 54392222 to MEMORY
+2019-02-09 22:24:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 54392218 bytes from map-output for attempt_local866908892_0002_m_000084_0
+2019-02-09 22:24:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54392218, inMemoryMapOutputs.size() -> 11, commitMemory -> 383850250, usedMemory ->1487096435
+2019-02-09 22:24:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000191_0 decomp: 359028 len: 359032 to MEMORY
+2019-02-09 22:24:29 [localfetcher#2] INFO  InMemoryMapOutput - Read 359028 bytes from map-output for attempt_local866908892_0002_m_000191_0
+2019-02-09 22:24:29 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 359028, inMemoryMapOutputs.size() -> 12, commitMemory -> 438242468, usedMemory ->1487455463
+2019-02-09 22:24:29 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000088_0 decomp: 55016567 len: 55016571 to MEMORY
+2019-02-09 22:24:30 [localfetcher#2] INFO  InMemoryMapOutput - Read 55016567 bytes from map-output for attempt_local866908892_0002_m_000088_0
+2019-02-09 22:24:30 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55016567, inMemoryMapOutputs.size() -> 13, commitMemory -> 438601496, usedMemory ->1542472030
+2019-02-09 22:24:30 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000089_0 decomp: 54841369 len: 54841373 to MEMORY
+2019-02-09 22:24:30 [localfetcher#2] INFO  InMemoryMapOutput - Read 54841369 bytes from map-output for attempt_local866908892_0002_m_000089_0
+2019-02-09 22:24:30 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54841369, inMemoryMapOutputs.size() -> 14, commitMemory -> 493618063, usedMemory ->1597313399
+2019-02-09 22:24:30 [localfetcher#2] INFO  LocalFetcher - fetcher#2 - MergeManager returned Status.WAIT ...
+2019-02-09 22:24:31 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000089_0 succeeded at 52300.81 MB/s) Aggregated copy rate(201 of 230 at 8517704.00 MB/s)
+2019-02-09 22:24:32 [main] INFO  Job -  map 100% reduce 29%
+2019-02-09 22:24:37 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000089_0 succeeded at 52300.81 MB/s) Aggregated copy rate(201 of 230 at 8517704.00 MB/s)
+2019-02-09 22:24:43 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000089_0 succeeded at 52300.81 MB/s) Aggregated copy rate(201 of 230 at 8517704.00 MB/s)
+2019-02-09 22:24:49 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000089_0 succeeded at 52300.81 MB/s) Aggregated copy rate(201 of 230 at 8517704.00 MB/s)
+2019-02-09 22:24:54 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - attempt_local866908892_0002_r_000000_0 Merge of the 35 files in-memory complete. Local file is /tmp/hadoop-vaibhav/mapred/local/localRunner/vaibhav/jobcache/job_local866908892_0002/attempt_local866908892_0002_r_000000_0/output/map_206.out.merged of size 1048853903
+2019-02-09 22:24:54 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000087_0 decomp: 54642178 len: 54642182 to MEMORY
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 54642178 bytes from map-output for attempt_local866908892_0002_m_000087_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54642178, inMemoryMapOutputs.size() -> 15, commitMemory -> 548459432, usedMemory ->603101610
+2019-02-09 22:24:55 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000189_0 decomp: 656755 len: 656759 to MEMORY
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 656755 bytes from map-output for attempt_local866908892_0002_m_000189_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 656755, inMemoryMapOutputs.size() -> 16, commitMemory -> 603101610, usedMemory ->603758365
+2019-02-09 22:24:55 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000190_0 decomp: 471820 len: 471824 to MEMORY
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 471820 bytes from map-output for attempt_local866908892_0002_m_000190_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 471820, inMemoryMapOutputs.size() -> 17, commitMemory -> 603758365, usedMemory ->604230185
+2019-02-09 22:24:55 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000079_0 decomp: 54617666 len: 54617670 to MEMORY
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 54617666 bytes from map-output for attempt_local866908892_0002_m_000079_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54617666, inMemoryMapOutputs.size() -> 18, commitMemory -> 604230185, usedMemory ->658847851
+2019-02-09 22:24:55 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000181_0 decomp: 54790007 len: 54790011 to MEMORY
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 54790007 bytes from map-output for attempt_local866908892_0002_m_000181_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54790007, inMemoryMapOutputs.size() -> 19, commitMemory -> 658847851, usedMemory ->713637858
+2019-02-09 22:24:55 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000182_0 decomp: 55387073 len: 55387077 to MEMORY
+2019-02-09 22:24:55 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000181_0 succeeded at 52251.83 MB/s) Aggregated copy rate(206 of 230 at 8675230.00 MB/s)
+2019-02-09 22:24:55 [localfetcher#2] INFO  InMemoryMapOutput - Read 55387073 bytes from map-output for attempt_local866908892_0002_m_000182_0
+2019-02-09 22:24:55 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55387073, inMemoryMapOutputs.size() -> 20, commitMemory -> 713637858, usedMemory ->769024931
+2019-02-09 22:24:56 [main] INFO  Job -  map 100% reduce 30%
+2019-02-09 22:24:56 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000077_0 decomp: 54769305 len: 54769309 to MEMORY
+2019-02-09 22:24:56 [localfetcher#2] INFO  InMemoryMapOutput - Read 54769305 bytes from map-output for attempt_local866908892_0002_m_000077_0
+2019-02-09 22:24:56 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54769305, inMemoryMapOutputs.size() -> 21, commitMemory -> 769024931, usedMemory ->823794236
+2019-02-09 22:24:56 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000078_0 decomp: 54157303 len: 54157307 to MEMORY
+2019-02-09 22:24:56 [localfetcher#2] INFO  InMemoryMapOutput - Read 54157303 bytes from map-output for attempt_local866908892_0002_m_000078_0
+2019-02-09 22:24:56 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54157303, inMemoryMapOutputs.size() -> 22, commitMemory -> 823794236, usedMemory ->877951539
+2019-02-09 22:24:56 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000180_0 decomp: 54897266 len: 54897270 to MEMORY
+2019-02-09 22:24:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54897266 bytes from map-output for attempt_local866908892_0002_m_000180_0
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54897266, inMemoryMapOutputs.size() -> 23, commitMemory -> 877951539, usedMemory ->932848805
+2019-02-09 22:24:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000082_0 decomp: 54578057 len: 54578061 to MEMORY
+2019-02-09 22:24:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54578057 bytes from map-output for attempt_local866908892_0002_m_000082_0
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54578057, inMemoryMapOutputs.size() -> 24, commitMemory -> 932848805, usedMemory ->987426862
+2019-02-09 22:24:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000184_0 decomp: 54816406 len: 54816410 to MEMORY
+2019-02-09 22:24:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54816406 bytes from map-output for attempt_local866908892_0002_m_000184_0
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54816406, inMemoryMapOutputs.size() -> 25, commitMemory -> 987426862, usedMemory ->1042243268
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - Starting inMemoryMerger's merge since commitMemory=1042243268 > mergeThreshold=1037917248. Current usedMemory=1042243268
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeThread - InMemoryMerger - Thread to merge in-memory shuffled map-outputs: Starting merge with 25 segments, while ignoring 0 segments
+2019-02-09 22:24:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000083_0 decomp: 54266465 len: 54266469 to MEMORY
+2019-02-09 22:24:57 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - Initiating in-memory merge with 25 segments...
+2019-02-09 22:24:57 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Merging 25 sorted segments
+2019-02-09 22:24:57 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  Merger - Down to the last merge-pass, with 25 segments left of total size: 1042242962 bytes
+2019-02-09 22:24:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54266465 bytes from map-output for attempt_local866908892_0002_m_000083_0
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54266465, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1096509733
+2019-02-09 22:24:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000185_0 decomp: 54314165 len: 54314169 to MEMORY
+2019-02-09 22:24:57 [localfetcher#2] INFO  InMemoryMapOutput - Read 54314165 bytes from map-output for attempt_local866908892_0002_m_000185_0
+2019-02-09 22:24:57 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54314165, inMemoryMapOutputs.size() -> 2, commitMemory -> 54266465, usedMemory ->1150823898
+2019-02-09 22:24:57 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000183_0 decomp: 54890703 len: 54890707 to MEMORY
+2019-02-09 22:24:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54890703 bytes from map-output for attempt_local866908892_0002_m_000183_0
+2019-02-09 22:24:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54890703, inMemoryMapOutputs.size() -> 3, commitMemory -> 108580630, usedMemory ->1205714601
+2019-02-09 22:24:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000080_0 decomp: 54316741 len: 54316745 to MEMORY
+2019-02-09 22:24:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54316741 bytes from map-output for attempt_local866908892_0002_m_000080_0
+2019-02-09 22:24:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54316741, inMemoryMapOutputs.size() -> 4, commitMemory -> 163471333, usedMemory ->1260031342
+2019-02-09 22:24:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000081_0 decomp: 54356088 len: 54356092 to MEMORY
+2019-02-09 22:24:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54356088 bytes from map-output for attempt_local866908892_0002_m_000081_0
+2019-02-09 22:24:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54356088, inMemoryMapOutputs.size() -> 5, commitMemory -> 217788074, usedMemory ->1314387430
+2019-02-09 22:24:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000175_0 decomp: 54998713 len: 54998717 to MEMORY
+2019-02-09 22:24:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54998713 bytes from map-output for attempt_local866908892_0002_m_000175_0
+2019-02-09 22:24:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54998713, inMemoryMapOutputs.size() -> 6, commitMemory -> 272144162, usedMemory ->1369386143
+2019-02-09 22:24:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000072_0 decomp: 54291833 len: 54291837 to MEMORY
+2019-02-09 22:24:58 [localfetcher#2] INFO  InMemoryMapOutput - Read 54291833 bytes from map-output for attempt_local866908892_0002_m_000072_0
+2019-02-09 22:24:58 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54291833, inMemoryMapOutputs.size() -> 7, commitMemory -> 327142875, usedMemory ->1423677976
+2019-02-09 22:24:58 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000073_0 decomp: 54260975 len: 54260979 to MEMORY
+2019-02-09 22:24:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 54260975 bytes from map-output for attempt_local866908892_0002_m_000073_0
+2019-02-09 22:24:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54260975, inMemoryMapOutputs.size() -> 8, commitMemory -> 381434708, usedMemory ->1477938951
+2019-02-09 22:24:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000071_0 decomp: 54499278 len: 54499282 to MEMORY
+2019-02-09 22:24:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 54499278 bytes from map-output for attempt_local866908892_0002_m_000071_0
+2019-02-09 22:24:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54499278, inMemoryMapOutputs.size() -> 9, commitMemory -> 435695683, usedMemory ->1532438229
+2019-02-09 22:24:59 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000173_0 decomp: 55094558 len: 55094562 to MEMORY
+2019-02-09 22:24:59 [localfetcher#2] INFO  InMemoryMapOutput - Read 55094558 bytes from map-output for attempt_local866908892_0002_m_000173_0
+2019-02-09 22:24:59 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55094558, inMemoryMapOutputs.size() -> 10, commitMemory -> 490194961, usedMemory ->1587532787
+2019-02-09 22:24:59 [localfetcher#2] INFO  LocalFetcher - fetcher#2 - MergeManager returned Status.WAIT ...
+2019-02-09 22:25:01 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000173_0 succeeded at 52542.27 MB/s) Aggregated copy rate(222 of 230 at 9508642.00 MB/s)
+2019-02-09 22:25:02 [main] INFO  Job -  map 100% reduce 32%
+2019-02-09 22:25:07 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000173_0 succeeded at 52542.27 MB/s) Aggregated copy rate(222 of 230 at 9508642.00 MB/s)
+2019-02-09 22:25:13 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000173_0 succeeded at 52542.27 MB/s) Aggregated copy rate(222 of 230 at 9508642.00 MB/s)
+2019-02-09 22:25:19 [communication thread] INFO  LocalJobRunner - reduce > copy task(attempt_local866908892_0002_m_000173_0 succeeded at 52542.27 MB/s) Aggregated copy rate(222 of 230 at 9508642.00 MB/s)
+2019-02-09 22:25:23 [InMemoryMerger - Thread to merge in-memory shuffled map-outputs] INFO  MergeManagerImpl - attempt_local866908892_0002_r_000000_0 Merge of the 25 files in-memory complete. Local file is /tmp/hadoop-vaibhav/mapred/local/localRunner/vaibhav/jobcache/job_local866908892_0002/attempt_local866908892_0002_r_000000_0/output/map_198.out.merged of size 1042243224
+2019-02-09 22:25:23 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000174_0 decomp: 55221173 len: 55221177 to MEMORY
+2019-02-09 22:25:23 [localfetcher#2] INFO  InMemoryMapOutput - Read 55221173 bytes from map-output for attempt_local866908892_0002_m_000174_0
+2019-02-09 22:25:23 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55221173, inMemoryMapOutputs.size() -> 11, commitMemory -> 545289519, usedMemory ->600510692
+2019-02-09 22:25:23 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000178_0 decomp: 55129387 len: 55129391 to MEMORY
+2019-02-09 22:25:23 [localfetcher#2] INFO  InMemoryMapOutput - Read 55129387 bytes from map-output for attempt_local866908892_0002_m_000178_0
+2019-02-09 22:25:23 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 55129387, inMemoryMapOutputs.size() -> 12, commitMemory -> 600510692, usedMemory ->655640079
+2019-02-09 22:25:23 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000179_0 decomp: 54981251 len: 54981255 to MEMORY
+2019-02-09 22:25:23 [localfetcher#2] INFO  InMemoryMapOutput - Read 54981251 bytes from map-output for attempt_local866908892_0002_m_000179_0
+2019-02-09 22:25:23 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54981251, inMemoryMapOutputs.size() -> 13, commitMemory -> 655640079, usedMemory ->710621330
+2019-02-09 22:25:24 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000076_0 decomp: 54668165 len: 54668169 to MEMORY
+2019-02-09 22:25:24 [localfetcher#2] INFO  InMemoryMapOutput - Read 54668165 bytes from map-output for attempt_local866908892_0002_m_000076_0
+2019-02-09 22:25:24 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54668165, inMemoryMapOutputs.size() -> 14, commitMemory -> 710621330, usedMemory ->765289495
+2019-02-09 22:25:24 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000074_0 decomp: 54665310 len: 54665314 to MEMORY
+2019-02-09 22:25:24 [localfetcher#2] INFO  InMemoryMapOutput - Read 54665310 bytes from map-output for attempt_local866908892_0002_m_000074_0
+2019-02-09 22:25:24 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54665310, inMemoryMapOutputs.size() -> 15, commitMemory -> 765289495, usedMemory ->819954805
+2019-02-09 22:25:24 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000176_0 decomp: 54806448 len: 54806452 to MEMORY
+2019-02-09 22:25:24 [localfetcher#2] INFO  InMemoryMapOutput - Read 54806448 bytes from map-output for attempt_local866908892_0002_m_000176_0
+2019-02-09 22:25:24 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54806448, inMemoryMapOutputs.size() -> 16, commitMemory -> 819954805, usedMemory ->874761253
+2019-02-09 22:25:24 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000075_0 decomp: 54701590 len: 54701594 to MEMORY
+2019-02-09 22:25:25 [localfetcher#2] INFO  InMemoryMapOutput - Read 54701590 bytes from map-output for attempt_local866908892_0002_m_000075_0
+2019-02-09 22:25:25 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54701590, inMemoryMapOutputs.size() -> 17, commitMemory -> 874761253, usedMemory ->929462843
+2019-02-09 22:25:25 [localfetcher#2] INFO  LocalFetcher - localfetcher#2 about to shuffle output of map attempt_local866908892_0002_m_000177_0 decomp: 54993376 len: 54993380 to MEMORY
+2019-02-09 22:25:25 [localfetcher#2] INFO  InMemoryMapOutput - Read 54993376 bytes from map-output for attempt_local866908892_0002_m_000177_0
+2019-02-09 22:25:25 [localfetcher#2] INFO  MergeManagerImpl - closeInMemoryFile -> map-output of size: 54993376, inMemoryMapOutputs.size() -> 18, commitMemory -> 929462843, usedMemory ->984456219
+2019-02-09 22:25:25 [EventFetcher for fetching Map Completion Events] INFO  EventFetcher - EventFetcher is interrupted.. Returning
+2019-02-09 22:25:25 [pool-7-thread-1] INFO  LocalJobRunner - 230 / 230 copied.
+2019-02-09 22:25:25 [pool-7-thread-1] INFO  MergeManagerImpl - finalMerge called with 18 in-memory map-outputs and 9 on-disk map-outputs
+2019-02-09 22:25:25 [pool-7-thread-1] INFO  Merger - Merging 18 sorted segments
+2019-02-09 22:25:25 [pool-7-thread-1] INFO  Merger - Down to the last merge-pass, with 18 segments left of total size: 984456002 bytes
+2019-02-09 22:25:25 [communication thread] INFO  LocalJobRunner - reduce > sort
+2019-02-09 22:25:26 [main] INFO  Job -  map 100% reduce 34%
+2019-02-09 22:25:31 [communication thread] INFO  LocalJobRunner - reduce > sort
+2019-02-09 22:25:32 [main] INFO  Job -  map 100% reduce 42%
+2019-02-09 22:25:37 [communication thread] INFO  LocalJobRunner - reduce > sort
+2019-02-09 22:25:38 [main] INFO  Job -  map 100% reduce 51%
+2019-02-09 22:25:43 [communication thread] INFO  LocalJobRunner - reduce > sort
+2019-02-09 22:25:44 [main] INFO  Job -  map 100% reduce 60%
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  MergeManagerImpl - Merged 18 segments, 984456219 bytes to disk to satisfy reduce memory limit
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  MergeManagerImpl - Merging 10 files, 10409699291 bytes from disk
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  Merger - Merging 10 sorted segments
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  Merger - Down to the last merge-pass, with 10 segments left of total size: 10409699153 bytes
+2019-02-09 22:25:49 [pool-7-thread-1] INFO  LocalJobRunner - reduce > sort
+2019-02-09 22:25:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:25:50 [main] INFO  Job -  map 100% reduce 67%
+2019-02-09 22:25:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:02 [main] INFO  Job -  map 100% reduce 68%
+2019-02-09 22:26:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:14 [main] INFO  Job -  map 100% reduce 69%
+2019-02-09 22:26:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:26 [main] INFO  Job -  map 100% reduce 70%
+2019-02-09 22:26:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:38 [main] INFO  Job -  map 100% reduce 71%
+2019-02-09 22:26:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:26:50 [main] INFO  Job -  map 100% reduce 72%
+2019-02-09 22:26:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:02 [main] INFO  Job -  map 100% reduce 73%
+2019-02-09 22:27:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:14 [main] INFO  Job -  map 100% reduce 74%
+2019-02-09 22:27:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:26 [main] INFO  Job -  map 100% reduce 75%
+2019-02-09 22:27:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:38 [main] INFO  Job -  map 100% reduce 76%
+2019-02-09 22:27:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:27:50 [main] INFO  Job -  map 100% reduce 77%
+2019-02-09 22:27:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:02 [main] INFO  Job -  map 100% reduce 78%
+2019-02-09 22:28:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:14 [main] INFO  Job -  map 100% reduce 79%
+2019-02-09 22:28:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:26 [main] INFO  Job -  map 100% reduce 80%
+2019-02-09 22:28:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:38 [main] INFO  Job -  map 100% reduce 81%
+2019-02-09 22:28:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:28:50 [main] INFO  Job -  map 100% reduce 82%
+2019-02-09 22:28:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:08 [main] INFO  Job -  map 100% reduce 83%
+2019-02-09 22:29:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:20 [main] INFO  Job -  map 100% reduce 84%
+2019-02-09 22:29:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:32 [main] INFO  Job -  map 100% reduce 85%
+2019-02-09 22:29:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:44 [main] INFO  Job -  map 100% reduce 86%
+2019-02-09 22:29:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:29:56 [main] INFO  Job -  map 100% reduce 87%
+2019-02-09 22:30:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:08 [main] INFO  Job -  map 100% reduce 88%
+2019-02-09 22:30:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:20 [main] INFO  Job -  map 100% reduce 89%
+2019-02-09 22:30:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:38 [main] INFO  Job -  map 100% reduce 90%
+2019-02-09 22:30:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:30:50 [main] INFO  Job -  map 100% reduce 91%
+2019-02-09 22:30:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:08 [main] INFO  Job -  map 100% reduce 92%
+2019-02-09 22:31:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:26 [main] INFO  Job -  map 100% reduce 93%
+2019-02-09 22:31:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:38 [main] INFO  Job -  map 100% reduce 94%
+2019-02-09 22:31:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:50 [main] INFO  Job -  map 100% reduce 95%
+2019-02-09 22:31:55 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:31:56 [main] INFO  Job -  map 100% reduce 96%
+2019-02-09 22:32:01 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:07 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:13 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:14 [main] INFO  Job -  map 100% reduce 97%
+2019-02-09 22:32:19 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:25 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:26 [main] INFO  Job -  map 100% reduce 98%
+2019-02-09 22:32:31 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:37 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:38 [main] INFO  Job -  map 100% reduce 99%
+2019-02-09 22:32:43 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:49 [communication thread] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:50 [main] INFO  Job -  map 100% reduce 100%
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  Task - Task:attempt_local866908892_0002_r_000000_0 is done. And is in the process of committing
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  Task - Task attempt_local866908892_0002_r_000000_0 is allowed to commit now
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  FileOutputCommitter - Saved output of task 'attempt_local866908892_0002_r_000000_0' to file:/home/vaibhav/Desktop/lspdpNew/parallelDataProcessing/SocialTraingle/MR-Demo/output-Triangle/_temporary/0/task_local866908892_0002_r_000000
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  LocalJobRunner - reduce > reduce
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  Task - Task 'attempt_local866908892_0002_r_000000_0' done.
+2019-02-09 22:32:52 [pool-7-thread-1] INFO  LocalJobRunner - Finishing task: attempt_local866908892_0002_r_000000_0
+2019-02-09 22:32:52 [Thread-88] INFO  LocalJobRunner - reduce task executor complete.
+2019-02-09 22:32:52 [main] INFO  Job - Job job_local866908892_0002 completed successfully
+2019-02-09 22:32:52 [main] INFO  Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=2663849272027
+		FILE: Number of bytes written=4342914528209
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=659971247
+		Map output records=575396577
+		Map output bytes=9258906077
+		Map output materialized bytes=10409700611
+		Input split bytes=70960
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=188551562
+		Reduce shuffle bytes=10409700611
+		Reduce input records=575396577
+		Reduce output records=1
+		Spilled Records=1725432556
+		Shuffled Maps =230
+		Failed Shuffles=0
+		Merged Map outputs=230
+		GC time elapsed (ms)=19412
+		Total committed heap usage (bytes)=425043427328
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=29
+	wc.CounterName
+		Reapeted=14224692
