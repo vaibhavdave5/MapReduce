@@ -19,14 +19,12 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 import org.apache.hadoop.conf.Configuration;
 
 public class Path2JoinRSCardinality extends Configured implements Tool{
 private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality.class);
 	
 	public static class TokenizerMapper extends Mapper<Object, Text, Text, Text> {
-		private final static int  maxFilter = Integer.MAX_VALUE;
 				
 		@Override
 		public void map(final Object key, final Text value, final Context context) throws IOException, InterruptedException {
@@ -34,20 +32,12 @@ private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality
 		
 			// Split on comma since input is from a CSV file.
 			final String[] nodes = value.toString().split(",");
-			if(nodes.length == 2) {
-				
-				int userIdLeft = Integer.parseInt(nodes[0]);
-				int userIdRight = Integer.parseInt(nodes[1]);
-							
-				
-				if(userIdRight < maxFilter && userIdLeft<maxFilter ){
 										
 					context.write(new Text(nodes[0]),new Text("from") );
 					context.write(new Text(nodes[1]), new Text("to"));
-				}
 				
 			}			
-		}
+		
 	}
 
 	public static class Path2Reducer extends Reducer<Text, Text, Text, Text> {
@@ -57,19 +47,19 @@ private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality
 		@Override
 		public void reduce(final Text key, final Iterable<Text> values, final Context context) throws IOException, InterruptedException {
 			
-			List<Text> fromEdges = new ArrayList<>();
-			List<Text> toEdges = new ArrayList<>();
+			List<Text> from = new ArrayList<>();
+			List<Text> to = new ArrayList<>();
 			
 			
 			for(Text edge : values) {
 				if(edge.equals(new Text("from")))
-					fromEdges.add(edge);
+					from.add(edge);
 				if(edge.equals(new Text("to")))
-					toEdges.add(edge);
+					to.add(edge);
 
 			}
-			int mulResult = fromEdges.size() * toEdges.size();
-			count = count.add(BigInteger.valueOf(mulResult));
+			int mul = from.size() * to.size();
+			count = count.add(BigInteger.valueOf(mul));
 							
 						
 		}
@@ -78,7 +68,7 @@ private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality
 		public void cleanup(final Context context) throws IOException, InterruptedException{
 			Text countText = new Text();
 			countText.set(count.toString());
-			context.write(new Text("Cardinality of Path2 ="),countText);
+			context.write(new Text("Cardinality="),countText);
 			
 		}
 	}
@@ -86,20 +76,12 @@ private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality
 	@Override
 	public int run(final String[] args) throws Exception {
 		final Configuration conf = getConf();
-		final Job job = Job.getInstance(conf, "Twitter Follower");
+		final Job job = Job.getInstance(conf, "Cardinality");
 		job.setJarByClass(Path2JoinRSCardinality.class);
 		final Configuration jobConf = job.getConfiguration();
 		jobConf.set("mapreduce.output.textoutputformat.separator", " ");
-		// Delete output directory, only to ease local development; will not work on AWS. ===========
-		final FileSystem fileSystem = FileSystem.get(conf);
-		if (fileSystem.exists(new Path("output"))) {
-			fileSystem.delete(new Path("output"), true);
-		}
-		// ================
 		job.setMapperClass(TokenizerMapper.class);
-		//job.setCombinerClass(IntSumReducer.class);
 		job.setReducerClass(Path2Reducer.class);
-		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 		FileInputFormat.addInputPath(job, new Path("input/edges.csv"));
@@ -109,10 +91,6 @@ private static final Logger logger = LogManager.getLogger(Path2JoinRSCardinality
 	
 	// MAIN
 	public static void main(String[] args) {
-//		
-//		if(args.length != 2) {
-//			throw new Error("Two arguments required:\n<input-dir> <output-dir>");
-//		}
 		
 		try {
 			ToolRunner.run(new Path2JoinRSCardinality(), args);
