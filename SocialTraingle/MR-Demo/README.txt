@@ -1,3 +1,12 @@
+
+
+I have two implementations in this project one can be found in 
+
+src/main/java/wc/TriangleCount.java  - RS Join
+
+and the other in src/main/java/wc/TwitterRepJoin.java - Map-side join
+
+
 For CS6240 Spring 2019 HW1
 
 Code author
@@ -46,3 +55,6 @@ All of the build & execution commands are organized in the Makefile.
 	make upload-input-aws		-- only before first execution
 	make aws					-- check for successful execution with web interface (aws.amazon.com)
 	download-output-aws			-- after successful execution & termination
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+

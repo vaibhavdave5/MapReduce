@@ -5,7 +5,7 @@
 hadoop.root=/home/joe/tools/hadoop/hadoop-2.9.1
 jar.name=mr-demo-1.0.jar
 jar.path=target/${jar.name}
-job.name=wc.FollowerCount
+job.name=wc.TriangleCount for RS join and wc.TwitterRepJoin for REP join
 local.input=input
 local.output=output
 # Pseudo-Cluster Execution
