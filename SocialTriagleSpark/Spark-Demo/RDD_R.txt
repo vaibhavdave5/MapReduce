@@ -1,0 +1,5 @@
+(40) ShuffledRDD[4] at reduceByKey at WordCount.scala:28 []
+ +-(40) MapPartitionsRDD[3] at map at WordCount.scala:27 []
+    |   MapPartitionsRDD[2] at map at WordCount.scala:26 []
+    |   input/edges.csv MapPartitionsRDD[1] at textFile at WordCount.scala:25 []
+    |   input/edges.csv HadoopRDD[0] at textFile at WordCount.scala:25 []
