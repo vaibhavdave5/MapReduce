@@ -1,0 +1,7 @@
+2019-02-20 21:40:50 INFO  SparkHadoopWriter:54 - Job job_20190220213953_0005 committed.
+(40) ShuffledRDD[4] at foldByKey at WordCount.scala:58 []
+ +-(40) MapPartitionsRDD[3] at map at WordCount.scala:57 []
+    |   MapPartitionsRDD[2] at map at WordCount.scala:56 []
+    |   input/edges.csv MapPartitionsRDD[1] at textFile at WordCount.scala:54 []
+    |   input/edges.csv HadoopRDD[0] at textFile at WordCount.scala:54 []
+2019-02-20 21:40:50 INFO  SparkContext:54 - Invoking stop() from shutdown hook
