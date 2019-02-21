@@ -16,7 +16,8 @@ object WordCountMain {
     val conf = new SparkConf().setAppName("Word Count")
     val sc = new SparkContext(conf)
 
-    RDD_R(sc, "input/edges.csv", "output")
+//    RDD_R(sc, "input/edges.csv", "output")
+      RDD_G(sc, "input/edges.csv", "output")
   }
 
   
@@ -30,5 +31,21 @@ object WordCountMain {
     counts.saveAsTextFile(outputPath)
     println(counts.toDebugString);
   }
+  
+  
+  def RDD_G(sc : SparkContext, inputPath: String, outputPath: String) = {
+
+	val textFile = sc.textFile(inputPath)
+
+    	val counts = textFile.map(line => line.split(",")(0))
+			.map(word => (word, 1))
+			.groupByKey()
+			.mapValues(id => id.sum)			 
+                 
+    	counts.saveAsTextFile(outputPath)
+	
+	  println(counts.toDebugString);
+
+}
 
 }
