@@ -19,7 +19,7 @@ object RddRsJoin {
 			 val sc = new SparkContext(conf)
 
 			 
-	val maxFilter = 5000
+	val maxFilter = 1000
 	val textFile = sc.textFile("input/edges.csv")
 
 	//Filter using the maxfilter
