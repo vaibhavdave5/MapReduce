@@ -13,7 +13,7 @@ object DsRsJoin {
   def main(args: Array[String]) {
     val logger: org.apache.log4j.Logger = LogManager.getRootLogger
     if (args.length != 2) {
-      logger.error("Usage:\ntwitterAnalysis.DatasetRSJoin <input dir> <output dir>")
+      logger.error("Usage:\nwc.DatasetRSJoin <input dir> <output dir>")
       System.exit(1)
     }
     val conf = new SparkConf().setAppName("DsRsJoin")
@@ -26,7 +26,7 @@ object DsRsJoin {
   			.getOrCreate()
 	
   import spark.implicits._
-	val maxFilter = 10000
+	val maxFilter = 1000
 	val edgeDatasetOnce = spark.read.csv(args(0))
 	
 	val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
