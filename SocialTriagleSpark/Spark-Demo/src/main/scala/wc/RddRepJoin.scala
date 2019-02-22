@@ -20,7 +20,7 @@ object RddRepJoin {
 
     val sc = new SparkContext(conf)
 
-    val maxFilter = 1000
+    val maxFilter = 5000
     val textFile = sc.textFile(args(0))
 
     //First filter the records based on id lesser than maxFilter
@@ -28,23 +28,12 @@ object RddRepJoin {
       .filter(edge => edge(0).toInt < maxFilter && edge(1).toInt < maxFilter)
       .map(edge => (edge(0), edge(1)))
 
-    val edgeHashMap = filteredEdges.map { case (a, b) => (a, b) }.collectAsMap
-
     var count = 0;
 
-    for ((k1, v1) <- edgeHashMap) {
-      for ((k2, v2) <- edgeHashMap) {
-        for ((k3, v3) <- edgeHashMap) {
-          if (v1 == k2 && v2 == k3 && v3 == k1) {
-            count += 1
-          }
-        }
-      }
-    }
+    val edgeHashMap = sc.broadcast(filteredEdges.map { case (a, b) => (a, b) }.collectAsMap())
 
-    val bw = new BufferedWriter(new FileWriter(new File("answer.txt")))
-    bw.write("TriangleCount" + count);
-    bw.close()
+    
+    
   }
 
 }
