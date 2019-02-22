@@ -5,6 +5,9 @@ import org.apache.spark.SparkContext
 import org.apache.log4j.LogManager
 import org.apache.log4j.Level
 import org.apache.spark.sql.SparkSession
+import java.io.BufferedWriter
+import java.io.File
+import java.io.FileWriter
 
 object WordCountMain {
 
@@ -20,8 +23,8 @@ object WordCountMain {
     //    RDD_R(sc, "input/edges.csv", "output")
     //      RDD_G(sc, "input/edges.csv", "output")
     // RDD_F(sc, "input/edges.csv", "output")
-    RDD_A(sc, "input/edges.csv", "output")
-    // DSET(sc,"input/edges.csv", "output")
+   // RDD_A(sc, "input/edges.csv", "output")
+     DSET(sc,"input/edges.csv", "output")
   }
 
   // Already implemented in Assignment 1
@@ -89,8 +92,11 @@ object WordCountMain {
 
     val word = spark.read.csv(inputPath).groupBy("_c1").count()
 
-    // Printing the logical and physical plans
+    val file = new File("log.txt")
+    val bw = new BufferedWriter(new FileWriter(file))
+    println("Start")
     println(word.explain(extended = true))
+    println("End")
     word.coalesce(1).write.csv(outputPath)
 
   }

@@ -1,0 +1,6 @@
+2019-02-21 21:06:29 INFO  SparkHadoopWriter:54 - Job job_20190221210530_0005 committed.
+(40) ShuffledRDD[4] at aggregateByKey at WordCount.scala:73 []
+ +-(40) MapPartitionsRDD[3] at map at WordCount.scala:72 []
+    |   MapPartitionsRDD[2] at map at WordCount.scala:71 []
+    |   input/edges.csv MapPartitionsRDD[1] at textFile at WordCount.scala:69 []
+    |   input/edges.csv HadoopRDD[0] at textFile at WordCount.scala:69 []

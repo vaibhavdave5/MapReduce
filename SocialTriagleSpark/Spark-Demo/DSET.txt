@@ -1,0 +1,27 @@
+Start
+2019-02-21 21:26:04 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2019-02-21 21:26:04 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2019-02-21 21:26:04 INFO  FileSourceStrategy:54 - Output Data Schema: struct<_c1: string>
+2019-02-21 21:26:04 INFO  FileSourceScanExec:54 - Pushed Filters: 
+== Parsed Logical Plan ==
+Aggregate [_c1#11], [_c1#11, count(1) AS count#17L]
++- AnalysisBarrier
+      +- Relation[_c0#10,_c1#11] csv
+
+== Analyzed Logical Plan ==
+_c1: string, count: bigint
+Aggregate [_c1#11], [_c1#11, count(1) AS count#17L]
++- Relation[_c0#10,_c1#11] csv
+
+== Optimized Logical Plan ==
+Aggregate [_c1#11], [_c1#11, count(1) AS count#17L]
++- Project [_c1#11]
+   +- Relation[_c0#10,_c1#11] csv
+
+== Physical Plan ==
+*(2) HashAggregate(keys=[_c1#11], functions=[count(1)], output=[_c1#11, count#17L])
++- Exchange hashpartitioning(_c1#11, 200)
+   +- *(1) HashAggregate(keys=[_c1#11], functions=[partial_count(1)], output=[_c1#11, count#22L])
+      +- *(1) FileScan csv [_c1#11] Batched: false, Format: CSV, Location: InMemoryFileIndex[file:/home/vaibhav/Desktop/lspdpNew/parallelDataProcessing/SocialTriagleSpark/S..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<_c1:string>
+()
+End
