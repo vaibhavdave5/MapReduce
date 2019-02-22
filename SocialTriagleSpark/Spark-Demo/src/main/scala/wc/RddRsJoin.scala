@@ -46,8 +46,6 @@ object RddRsJoin {
 	val triangleCount =  matches/3
 	println("Number of triangles = "+ triangleCount)
 							
-	// Printing output
-//s	
 	val bw =  new BufferedWriter(new FileWriter(new File("answer.txt"))) 
 	bw.write("TriangleCount" + triangleCount);
 	bw.close()
