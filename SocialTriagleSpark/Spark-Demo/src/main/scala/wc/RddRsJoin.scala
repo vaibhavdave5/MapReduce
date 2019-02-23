@@ -19,8 +19,8 @@ object RddRsJoin {
 			 val sc = new SparkContext(conf)
 
 			 
-	val maxFilter = 1000
-	val textFile = sc.textFile("input/edges.csv")
+	val maxFilter = 15000
+	val textFile = sc.textFile("s3://mr-input/edges.csv")
 
 	//Filter using the maxfilter
 	val filteredEdges = textFile.map(line => line.split(","))
@@ -46,8 +46,6 @@ object RddRsJoin {
 	val triangleCount =  matches/3
 	println("Number of triangles = "+ triangleCount)
 							
-	val bw =  new BufferedWriter(new FileWriter(new File("answer.txt"))) 
-	bw.write("TriangleCount" + triangleCount);
-	bw.close()
+	
 	}
 }

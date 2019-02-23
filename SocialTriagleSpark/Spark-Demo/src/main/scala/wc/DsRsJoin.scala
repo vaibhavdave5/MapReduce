@@ -26,8 +26,8 @@ object DsRsJoin {
   			.getOrCreate()
 	
   import spark.implicits._
-	val maxFilter = 1000
-	val edgeDatasetOnce = spark.read.csv(args(0))
+	val maxFilter = 10000
+	val edgeDatasetOnce = spark.read.csv("s3://mr-input/edges.csv")
 	
 	val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
 
@@ -53,7 +53,7 @@ object DsRsJoin {
 	bw.write("TriangleCount" + triangleCount);
 	bw.close()
 	              
-  fullTriangle.coalesce(1).write.csv(args(1))
+  fullTriangle.coalesce(1).write.csv("output2")
 
     
   

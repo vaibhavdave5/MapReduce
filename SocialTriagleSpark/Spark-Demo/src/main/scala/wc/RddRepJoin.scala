@@ -20,8 +20,8 @@ object RddRepJoin {
 
     val sc = new SparkContext(conf)
 
-    val maxFilter = 1000
-    val textFile = sc.textFile(args(0))
+    val maxFilter = 5000
+    val textFile = sc.textFile("s3://mr-input/edges.csv")
 
     //First filter the records based on id lesser than maxFilter
     val filteredEdges = textFile.map(line => line.split(","))

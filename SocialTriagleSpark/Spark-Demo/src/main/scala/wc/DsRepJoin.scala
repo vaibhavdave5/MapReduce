@@ -24,8 +24,8 @@ object DsRepJoin {
       .getOrCreate()
     import spark.implicits._
 
-    val maxFilter = 1000
-    val edgeDatasetOnce = spark.read.csv("input/edges.csv")
+    val maxFilter = 5000
+    val edgeDatasetOnce = spark.read.csv("s3://mr-input/edges.csv")
 
     val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
 
@@ -50,7 +50,7 @@ object DsRepJoin {
       close
     }
 
-    fullTriangle.coalesce(1).write.csv("output")
+    fullTriangle.coalesce(1).write.csv("output1")
 
   }
 
