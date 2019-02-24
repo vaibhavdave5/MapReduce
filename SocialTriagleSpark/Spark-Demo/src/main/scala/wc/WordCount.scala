@@ -9,6 +9,7 @@ import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
 
+
 object WordCountMain {
 
   def main(args: Array[String]) {
@@ -21,10 +22,10 @@ object WordCountMain {
     val sc = new SparkContext(conf)
 
     //    RDD_R(sc, "input/edges.csv", "output")
-    //      RDD_G(sc, "input/edges.csv", "output")
+          RDD_G(sc, "input/edges.csv", "output")
     // RDD_F(sc, "input/edges.csv", "output")
    // RDD_A(sc, "input/edges.csv", "output")
-     DSET(sc,"input/edges.csv", "output")
+   //  DSET(sc,"input/edges.csv", "output")
   }
 
   // Already implemented in Assignment 1
@@ -40,16 +41,35 @@ object WordCountMain {
 
   def RDD_G(sc: SparkContext, inputPath: String, outputPath: String) = {
 
-    val textFile = sc.textFile(inputPath)
+//    val textFile = sc.textFile(inputPath)
+//
+//    val counts = textFile.map(line => line.split(",")(0))
+//      .map(word => (word, 1))
+//      .groupByKey()
+//      .mapValues(id => id.sum)
+//
+//    counts.saveAsTextFile(outputPath)
+//
+//    println(counts.toDebugString);
+    
+    val spark = SparkSession
+  			.builder()
+  			.appName("DsRsJoin")
+  			.getOrCreate()
+  			
+  import spark.implicits._			
+  val edgeDatasetOnce = spark.read.csv("input/edges1.csv")
+	
+  val maxFilter = 10000
+	val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
 
-    val counts = textFile.map(line => line.split(",")(0))
-      .map(word => (word, 1))
-      .groupByKey()
-      .mapValues(id => id.sum)
-
-    counts.saveAsTextFile(outputPath)
-
-    println(counts.toDebugString);
+	val left =  filtered.toDF("a","b")
+	val right = filtered.toDF("c","d")
+	
+	left.joinWith(right, $"b" === $"c").drop("b").drop("c")
+	println("start")
+	println(left.explain(extended = true))	
+	println("end")
 
   }
 

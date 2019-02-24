@@ -19,8 +19,8 @@ object RddRsJoin {
 			 val sc = new SparkContext(conf)
 
 			 
-	val maxFilter = 15000
-	val textFile = sc.textFile("s3://mr-input/edges.csv")
+	val maxFilter = 10000
+	val textFile = sc.textFile("input/edges.csv")
 
 	//Filter using the maxfilter
 	val filteredEdges = textFile.map(line => line.split(","))
@@ -39,11 +39,15 @@ object RddRsJoin {
 	//Reverse the endpoints of path2 edges to exactly match with the keys
 	//of the third edge dataset.
 	val revPath2 = path2.map(x => ((x._2 , x._1) , 1))
-						
+
+
+	println(revPath2.toDebugString)
+
 	//Divide by 3 to eliminate redundant counting of same triangles
 	//with different order of edges.
 	val matches = revPath2.join(edgesThrice).count()
 	val triangleCount =  matches/3
+	
 	println("Number of triangles = "+ triangleCount)
 							
 	

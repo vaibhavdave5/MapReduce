@@ -27,7 +27,7 @@ object DsRsJoin {
 	
   import spark.implicits._
 	val maxFilter = 10000
-	val edgeDatasetOnce = spark.read.csv("s3://mr-input/edges.csv")
+	val edgeDatasetOnce = spark.read.csv("input/edges.csv")
 	
 	val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
 
@@ -47,7 +47,7 @@ object DsRsJoin {
 	println(triangleCount)
 	// Printing the lineage graph and outputs
 	println("Join for full Triangle:")	
-	println(fullTriangle.explain)		
+	println(fullTriangle.explain(extended = true))		
 
 	val bw =  new BufferedWriter(new FileWriter(new File("answer.txt"))) 
 	bw.write("TriangleCount" + triangleCount);

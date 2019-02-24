@@ -7,51 +7,60 @@ import org.apache.log4j.Level
 import org.apache.spark.sql.SparkSession
 import java.io._
 
+
+// Uses 
 object DsRepJoin {
 
   def main(args: Array[String]) {
     val logger: org.apache.log4j.Logger = LogManager.getRootLogger
     if (args.length != 2) {
-      logger.error("Usage:\ntwitterAnalysis.DatasetRepJoin <input dir> <output dir>")
+      logger.error("Usage:\nwc.RddRepJoin <input dir> <output dir>")
       System.exit(1)
     }
     val conf = new SparkConf().setAppName("DsRepJoin")
 
     val sc = new SparkContext(conf)
-    val spark = SparkSession
-      .builder()
-      .appName("DsRSJoin")
-      .getOrCreate()
-    import spark.implicits._
 
     val maxFilter = 5000
-    val edgeDatasetOnce = spark.read.csv("s3://mr-input/edges.csv")
+    val textFile = sc.textFile("input/edges.csv")
 
-    val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
+     val spark: SparkSession =
+    SparkSession
+        .builder()
+        .appName("AppName")
+        .config("spark.master", "local")
+        .getOrCreate()
+    import spark.implicits._
 
-    val left = filtered.toDF("a", "b")
-    val right = filtered.toDF("c", "d")
-    val thirdEdge = filtered.toDF("p", "q")
-    val path2 = left.join(right, $"b" === $"c").drop("b").drop("c")
 
-    println("Join for path2:")
-    println(path2.explain)
+    //First filter the records based on id lesser than maxFilter
+    val filteredEdgesTemp = textFile.map(line => line.split(","))
+      .filter(edge => edge(0).toInt < maxFilter && edge(1).toInt < maxFilter)
+      .map(edge => (edge(0), edge(1)))
 
-    val fullTriangle = path2.join(thirdEdge, $"d" === $"p" && $"a" === $"q")
-    val triangleCount = fullTriangle.count() / 3
+    val filteredEdges = spark.createDataset(filteredEdgesTemp)
 
-    // Printing the lineage graph and outputs
+    val edgeHashMap = sc.broadcast(filteredEdgesTemp.map { case (a, b) => (a, b) }.collectAsMap)
+    val path2Map =   filteredEdges.flatMap { case(key, value) =>
+                      edgeHashMap.value.get(value).map { otherValue =>
+                      (key, otherValue)
+                  }
+                }
+    
+    val fullTriangle = path2Map.flatMap {case(key, value) =>
+                      edgeHashMap.value.get(value).map { otherValue => if(otherValue == key)
+                      (key, otherValue) else ("xxx", "yyy")
+                  }
+                }
+    fullTriangle.filter($"_1".contains("xxx")) 
+
+    
+    val count = fullTriangle.count()/3
+    
     println("Join for full Triangle:")
     println(fullTriangle.explain)
-
-    import java.io.PrintWriter
-    val printToFile = new PrintWriter(new File("OutputTriangleCount")) {
-      write(("Triangle Count = " + triangleCount));
-      close
-    }
-
-    fullTriangle.coalesce(1).write.csv("output1")
-
+     println("Answer = "+count)
+    
   }
 
 }
