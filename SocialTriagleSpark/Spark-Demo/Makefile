@@ -4,10 +4,10 @@
 # -----------------------------------------------------------
 spark.root=/home/joe/tools/spark/spark-2.3.1-bin-without-hadoop
 hadoop.root=/home/joe/tools/hadoop/hadoop-2.9.1
-app.name=Word Count
+app.name=Word Count | DsRepJoin | DsRsJoin | RddRepJoin | RddRdJoin
 jar.name=spark-demo.jar
 maven.jar.name=spark-demo-1.0.jar
-job.name=wc.WordCountMain
+job.name=wc.WordCountMain | wc.DsRepJoin | wc.DsRsJoin | wc.RddRepJoin | wc.RddRdJoin 
 local.master=local[4]
 local.input=input
 local.output=output
