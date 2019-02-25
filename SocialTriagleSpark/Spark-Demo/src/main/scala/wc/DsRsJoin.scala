@@ -27,7 +27,7 @@ object DsRsJoin {
 	
   import spark.implicits._
 	val maxFilter = 10000
-	val edgeDatasetOnce = spark.read.csv("input/edges.csv")
+	val edgeDatasetOnce = spark.read.csv("s3://mr-input/edges.csv")
 	
 	val filtered = edgeDatasetOnce.filter($"_c0" < maxFilter && $"_c1" < maxFilter)
 

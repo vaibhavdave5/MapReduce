@@ -7,7 +7,8 @@ import org.apache.log4j.Level
 import org.apache.spark.sql.SparkSession
 import java.io._
 
-// Uses RDD
+
+// Uses 
 object RddRepJoin {
 
   def main(args: Array[String]) {
@@ -20,32 +21,58 @@ object RddRepJoin {
 
     val sc = new SparkContext(conf)
 
-    val maxFilter = 5000
-    val textFile = sc.textFile("input/edges.csv")
+    val maxFilter = 500
+    val textFile = sc.textFile("s3://mr-input/edges.csv")
 
+     val spark: SparkSession =
+    SparkSession
+        .builder()
+        .appName("AppName")
+        .config("spark.master", "local")
+        .getOrCreate()
+    import spark.implicits._
+
+
+    //Creating Filtered RDD using Maxfilter
     //First filter the records based on id lesser than maxFilter
     val filteredEdges = textFile.map(line => line.split(","))
       .filter(edge => edge(0).toInt < maxFilter && edge(1).toInt < maxFilter)
       .map(edge => (edge(0), edge(1)))
 
-    
 
-    val edgeHashMap = sc.broadcast(filteredEdges.map { case (a, b) => (a, b) }.collectAsMap)
+
+    val edgeHashMap = sc.broadcast(filteredEdges.map{ case (a, b) => (a, b) }.collectAsMap)
     
+    // Initial Setuo
+    val from = filteredEdges.map { case (a, b) => (a +"-"+ b) }.collect().toList
+    val to = filteredEdges.map { case (a, b) => (a +"-"+ b) }.collect().toList
+    var path2 = List[String]();
+
     
-    
-    val path2Map =   filteredEdges.flatMap { case(key, value) =>
-                      edgeHashMap.value.get(value).map { otherValue =>
-                      (key, otherValue)
-                  }
-                }
-    
-    val fullTriangle = path2Map.flatMap {case(key, value) =>
-                      edgeHashMap.value.get(value).map { otherValue => if(otherValue == key)
-                      (key, otherValue) else None
-                  }
-                }
-    
+    // Creating Path2 edge
+     from.foreach(t => 
+      to.foreach(r =>
+      if(t.split("-")(1) == r.split("-")(0))
+        path2 = path2 :+ (t.split("-")(0)+"-"+r.split("-")(1))
+      )
+     ) 
+
+
+    // Using the Dataset and flatMap and path2 to find full traingle 
+       var fullTriangle = filteredEdges.flatMap {case(key, value) =>
+                            for (r <- path2) 
+                            yield {
+                            if(value == r.split("-")(0) && key == r.split("-")(1)){
+                                  (key)
+                            }
+                             else ("xx")    
+                                }
+                            }
+                        
+
+    // Filtering out the unneccessary rows in DataSet
+    fullTriangle = fullTriangle.filter(x => !x.contains("xx"))
+ 
     val count = fullTriangle.count()/3
     
     println("Join for full Triangle:")
@@ -53,5 +80,4 @@ object RddRepJoin {
      println("Answer = "+count)
     
   }
-
 }

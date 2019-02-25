@@ -21,8 +21,8 @@ object DsRepJoin {
 
     val sc = new SparkContext(conf)
 
-    val maxFilter = 5000
-    val textFile = sc.textFile("input/edges.csv")
+    val maxFilter = 500
+    val textFile = sc.textFile("s3://mr-input/edges.csv")
 
      val spark: SparkSession =
     SparkSession
@@ -38,23 +38,42 @@ object DsRepJoin {
       .filter(edge => edge(0).toInt < maxFilter && edge(1).toInt < maxFilter)
       .map(edge => (edge(0), edge(1)))
 
+
+    // Creating Dataset
     val filteredEdges = spark.createDataset(filteredEdgesTemp)
 
-    val edgeHashMap = sc.broadcast(filteredEdgesTemp.map { case (a, b) => (a, b) }.collectAsMap)
-    val path2Map =   filteredEdges.flatMap { case(key, value) =>
-                      edgeHashMap.value.get(value).map { otherValue =>
-                      (key, otherValue)
-                  }
-                }
+    val edgeHashMap = sc.broadcast(filteredEdges.map { case (a, b) => (a, b) })
     
-    val fullTriangle = path2Map.flatMap {case(key, value) =>
-                      edgeHashMap.value.get(value).map { otherValue => if(otherValue == key)
-                      (key, otherValue) else ("xxx", "yyy")
-                  }
-                }
-    fullTriangle.filter($"_1".contains("xxx")) 
+    // Initial Setuo
+    val from = filteredEdgesTemp.map { case (a, b) => (a +"-"+ b) }.collect().toList
+    val to = filteredEdgesTemp.map { case (a, b) => (a +"-"+ b) }.collect().toList
+    var path2 = List[String]();
 
     
+    // Creating Path2 edge
+     from.foreach(t => 
+      to.foreach(r =>
+      if(t.split("-")(1) == r.split("-")(0))
+        path2 = path2 :+ (t.split("-")(0)+"-"+r.split("-")(1))
+      )
+     ) 
+
+
+    // Using the Dataset and flatMap and path2 to find full traingle 
+       var fullTriangle = filteredEdges.flatMap {case(key, value) =>
+                            for (r <- path2) 
+                            yield {
+                            if(value == r.split("-")(0) && key == r.split("-")(1)){
+                                  (key)
+                            }
+                             else ("xx")    
+                                }
+                            }
+                        
+
+    // Filtering out the unneccessary rows in DataSet
+    fullTriangle = fullTriangle.filter(x => !x.contains("xx"))
+ 
     val count = fullTriangle.count()/3
     
     println("Join for full Triangle:")
