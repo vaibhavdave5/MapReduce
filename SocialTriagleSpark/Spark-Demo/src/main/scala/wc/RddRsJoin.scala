@@ -20,7 +20,7 @@ object RddRsJoin {
 
 			 
 	val maxFilter = 10000
-	val textFile = sc.textFile("s3://mr-input/edges.csv")
+	val textFile = sc.textFile(args(0))
 
 	//Filter using the maxfilter
 	val filteredEdges = textFile.map(line => line.split(","))

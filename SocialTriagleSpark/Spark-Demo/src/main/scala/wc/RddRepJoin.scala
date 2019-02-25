@@ -22,7 +22,7 @@ object RddRepJoin {
     val sc = new SparkContext(conf)
 
     val maxFilter = 500
-    val textFile = sc.textFile("s3://mr-input/edges.csv")
+    val textFile = sc.textFile(args(0))
 
      val spark: SparkSession =
     SparkSession
