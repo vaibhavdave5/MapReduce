@@ -1,0 +1,1507 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/14/__spark_libs__2222241143844789193.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19/02/25 01:24:27 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 13023@ip-172-31-87-58
+19/02/25 01:24:27 INFO SignalUtils: Registered signal handler for TERM
+19/02/25 01:24:27 INFO SignalUtils: Registered signal handler for HUP
+19/02/25 01:24:27 INFO SignalUtils: Registered signal handler for INT
+19/02/25 01:24:29 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/02/25 01:24:29 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/02/25 01:24:29 INFO SecurityManager: Changing view acls groups to: 
+19/02/25 01:24:29 INFO SecurityManager: Changing modify acls groups to: 
+19/02/25 01:24:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/02/25 01:24:29 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:37443 after 158 ms (0 ms spent in bootstraps)
+19/02/25 01:24:30 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/02/25 01:24:30 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/02/25 01:24:30 INFO SecurityManager: Changing view acls groups to: 
+19/02/25 01:24:30 INFO SecurityManager: Changing modify acls groups to: 
+19/02/25 01:24:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/02/25 01:24:30 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:37443 after 16 ms (0 ms spent in bootstraps)
+19/02/25 01:24:30 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/blockmgr-055ecbeb-8b9b-45b8-95b3-5a6ee9ef311c
+19/02/25 01:24:30 INFO MemoryStore: MemoryStore started with capacity 2.5 GB
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-172-31-80-113.ec2.internal:37443
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+19/02/25 01:24:31 INFO Executor: Starting executor ID 3 on host ip-172-31-87-58.ec2.internal
+19/02/25 01:24:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35807.
+19/02/25 01:24:31 INFO NettyBlockTransferService: Server created on ip-172-31-87-58.ec2.internal:35807
+19/02/25 01:24:31 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/02/25 01:24:31 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(3, ip-172-31-87-58.ec2.internal, 35807, None)
+19/02/25 01:24:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(3, ip-172-31-87-58.ec2.internal, 35807, None)
+19/02/25 01:24:31 INFO BlockManager: external shuffle service port = 7337
+19/02/25 01:24:31 INFO BlockManager: Registering executor with local external shuffle service.
+19/02/25 01:24:31 INFO TransportClientFactory: Successfully created connection to ip-172-31-87-58.ec2.internal/172.31.87.58:7337 after 5 ms (0 ms spent in bootstraps)
+19/02/25 01:24:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(3, ip-172-31-87-58.ec2.internal, 35807, None)
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Got assigned task 17
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Got assigned task 18
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Got assigned task 19
+19/02/25 01:24:31 INFO Executor: Running task 6.0 in stage 2.0 (TID 17)
+19/02/25 01:24:31 INFO CoarseGrainedExecutorBackend: Got assigned task 20
+19/02/25 01:24:31 INFO Executor: Running task 7.0 in stage 2.0 (TID 18)
+19/02/25 01:24:31 INFO Executor: Running task 8.0 in stage 2.0 (TID 19)
+19/02/25 01:24:31 INFO Executor: Running task 9.0 in stage 2.0 (TID 20)
+19/02/25 01:24:31 INFO Executor: Fetching spark://ip-172-31-80-113.ec2.internal:37443/jars/original-spark-demo-1.0.jar with timestamp 1551057754705
+19/02/25 01:24:32 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:37443 after 11 ms (0 ms spent in bootstraps)
+19/02/25 01:24:32 INFO Utils: Fetching spark://ip-172-31-80-113.ec2.internal:37443/jars/original-spark-demo-1.0.jar to /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/spark-f00a0351-d954-4c9b-9157-5067e4efa483/fetchFileTemp4054118952630705059.tmp
+19/02/25 01:24:32 INFO Utils: Copying /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/spark-f00a0351-d954-4c9b-9157-5067e4efa483/2426944991551057754705_cache to /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/container_1551054971382_0003_01_000041/./original-spark-demo-1.0.jar
+19/02/25 01:24:32 INFO Executor: Adding file:/mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/container_1551054971382_0003_01_000041/./original-spark-demo-1.0.jar to class loader
+19/02/25 01:24:32 INFO TorrentBroadcast: Started reading broadcast variable 7
+19/02/25 01:24:32 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:39247 after 3 ms (0 ms spent in bootstraps)
+19/02/25 01:24:32 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 6.8 KB, free 2.5 GB)
+19/02/25 01:24:32 INFO TorrentBroadcast: Reading broadcast variable 7 took 163 ms
+19/02/25 01:24:32 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 13.3 KB, free 2.5 GB)
+19/02/25 01:24:33 INFO CodeGenerator: Code generated in 379.554335 ms
+19/02/25 01:24:33 INFO CodeGenerator: Code generated in 55.459373 ms
+19/02/25 01:24:33 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1073741824-1207959552, partition values: [empty row]
+19/02/25 01:24:33 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1207959552-1319281825, partition values: [empty row]
+19/02/25 01:24:33 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 805306368-939524096, partition values: [empty row]
+19/02/25 01:24:33 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 939524096-1073741824, partition values: [empty row]
+19/02/25 01:24:33 INFO CodeGenerator: Code generated in 34.556504 ms
+19/02/25 01:24:33 INFO TorrentBroadcast: Started reading broadcast variable 4
+19/02/25 01:24:33 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 26.4 KB, free 2.5 GB)
+19/02/25 01:24:33 INFO TorrentBroadcast: Reading broadcast variable 4 took 12 ms
+19/02/25 01:24:34 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 340.9 KB, free 2.5 GB)
+19/02/25 01:24:37 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:24:37 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:24:37 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:24:37 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:24:37 INFO GPLNativeCodeLoader: Loaded native gpl library
+19/02/25 01:24:37 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 1546b8dc0ca6f1ffd26a812d52bd7b80915e0a25]
+19/02/25 01:25:22 INFO Executor: Finished task 9.0 in stage 2.0 (TID 20). 1662 bytes result sent to driver
+19/02/25 01:25:22 INFO CoarseGrainedExecutorBackend: Got assigned task 29
+19/02/25 01:25:22 INFO Executor: Running task 8.0 in stage 4.0 (TID 29)
+19/02/25 01:25:23 INFO TorrentBroadcast: Started reading broadcast variable 8
+19/02/25 01:25:23 INFO TransportClientFactory: Successfully created connection to ip-172-31-90-64.ec2.internal/172.31.90.64:37559 after 85 ms (0 ms spent in bootstraps)
+19/02/25 01:25:23 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 6.8 KB, free 2.5 GB)
+19/02/25 01:25:23 INFO TorrentBroadcast: Reading broadcast variable 8 took 269 ms
+19/02/25 01:25:23 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 13.3 KB, free 2.5 GB)
+19/02/25 01:25:23 INFO CodeGenerator: Code generated in 89.786367 ms
+19/02/25 01:25:23 INFO CodeGenerator: Code generated in 69.081855 ms
+19/02/25 01:25:23 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1073741824-1207959552, partition values: [empty row]
+19/02/25 01:25:23 INFO TorrentBroadcast: Started reading broadcast variable 5
+19/02/25 01:25:23 INFO TransportClientFactory: Successfully created connection to ip-172-31-94-11.ec2.internal/172.31.94.11:43985 after 52 ms (0 ms spent in bootstraps)
+19/02/25 01:25:23 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 26.4 KB, free 2.5 GB)
+19/02/25 01:25:23 INFO TorrentBroadcast: Reading broadcast variable 5 took 369 ms
+19/02/25 01:25:24 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 340.9 KB, free 2.5 GB)
+19/02/25 01:25:24 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:25:33 INFO Executor: Finished task 7.0 in stage 2.0 (TID 18). 1619 bytes result sent to driver
+19/02/25 01:25:33 INFO CoarseGrainedExecutorBackend: Got assigned task 30
+19/02/25 01:25:33 INFO Executor: Running task 9.0 in stage 4.0 (TID 30)
+19/02/25 01:25:33 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1207959552-1319281825, partition values: [empty row]
+19/02/25 01:25:33 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:25:33 INFO Executor: Finished task 8.0 in stage 2.0 (TID 19). 1619 bytes result sent to driver
+19/02/25 01:25:35 INFO Executor: Finished task 6.0 in stage 2.0 (TID 17). 1619 bytes result sent to driver
+19/02/25 01:25:38 INFO CoarseGrainedExecutorBackend: Got assigned task 31
+19/02/25 01:25:38 INFO CoarseGrainedExecutorBackend: Got assigned task 32
+19/02/25 01:25:38 INFO Executor: Running task 1.0 in stage 3.0 (TID 32)
+19/02/25 01:25:38 INFO Executor: Running task 0.0 in stage 3.0 (TID 31)
+19/02/25 01:25:38 INFO MapOutputTrackerWorker: Updating epoch to 2 and clearing cache
+19/02/25 01:25:38 INFO TorrentBroadcast: Started reading broadcast variable 9
+19/02/25 01:25:38 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 12.7 KB, free 2.5 GB)
+19/02/25 01:25:38 INFO TorrentBroadcast: Reading broadcast variable 9 took 23 ms
+19/02/25 01:25:38 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 29.1 KB, free 2.5 GB)
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:39 INFO TransportClientFactory: Successfully created connection to ip-172-31-90-64.ec2.internal/172.31.90.64:7337 after 10 ms (0 ms spent in bootstraps)
+19/02/25 01:25:39 INFO TransportClientFactory: Successfully created connection to ip-172-31-94-11.ec2.internal/172.31.94.11:7337 after 84 ms (24 ms spent in bootstraps)
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 129 ms
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 124 ms
+19/02/25 01:25:39 INFO CodeGenerator: Code generated in 128.063293 ms
+19/02/25 01:25:39 INFO CodeGenerator: Code generated in 50.925204 ms
+19/02/25 01:25:39 INFO CodeGenerator: Code generated in 122.64395 ms
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 1, fetching them
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:25:39 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:25:39 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:25:39 INFO CodeGenerator: Code generated in 64.870081 ms
+19/02/25 01:25:39 INFO CodeGenerator: Code generated in 34.192147 ms
+19/02/25 01:25:40 INFO CodeGenerator: Code generated in 48.870852 ms
+19/02/25 01:25:40 INFO CodeGenerator: Code generated in 66.087251 ms
+19/02/25 01:25:40 INFO CodeGenerator: Code generated in 80.284804 ms
+19/02/25 01:25:42 INFO Executor: Finished task 1.0 in stage 3.0 (TID 32). 3745 bytes result sent to driver
+19/02/25 01:25:42 INFO Executor: Finished task 0.0 in stage 3.0 (TID 31). 3745 bytes result sent to driver
+19/02/25 01:25:42 INFO CoarseGrainedExecutorBackend: Got assigned task 33
+19/02/25 01:25:42 INFO CoarseGrainedExecutorBackend: Got assigned task 34
+19/02/25 01:25:42 INFO Executor: Running task 3.0 in stage 3.0 (TID 34)
+19/02/25 01:25:42 INFO Executor: Running task 2.0 in stage 3.0 (TID 33)
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 21 ms
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 39 ms
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:42 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:25:43 INFO Executor: Finished task 2.0 in stage 3.0 (TID 33). 3745 bytes result sent to driver
+19/02/25 01:25:43 INFO CoarseGrainedExecutorBackend: Got assigned task 35
+19/02/25 01:25:43 INFO Executor: Running task 4.0 in stage 3.0 (TID 35)
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 26 ms
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 30 ms
+19/02/25 01:25:43 INFO Executor: Finished task 4.0 in stage 3.0 (TID 35). 3745 bytes result sent to driver
+19/02/25 01:25:43 INFO CoarseGrainedExecutorBackend: Got assigned task 36
+19/02/25 01:25:43 INFO Executor: Running task 5.0 in stage 3.0 (TID 36)
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 11 ms
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 0 local blocks and 3 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:43 INFO Executor: Finished task 3.0 in stage 3.0 (TID 34). 3745 bytes result sent to driver
+19/02/25 01:25:43 INFO CoarseGrainedExecutorBackend: Got assigned task 37
+19/02/25 01:25:43 INFO Executor: Running task 6.0 in stage 3.0 (TID 37)
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 38 ms
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:44 INFO Executor: Finished task 6.0 in stage 3.0 (TID 37). 3788 bytes result sent to driver
+19/02/25 01:25:44 INFO CoarseGrainedExecutorBackend: Got assigned task 38
+19/02/25 01:25:44 INFO Executor: Running task 7.0 in stage 3.0 (TID 38)
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 10 ms
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 30 ms
+19/02/25 01:25:44 INFO Executor: Finished task 7.0 in stage 3.0 (TID 38). 3745 bytes result sent to driver
+19/02/25 01:25:44 INFO CoarseGrainedExecutorBackend: Got assigned task 39
+19/02/25 01:25:44 INFO Executor: Running task 8.0 in stage 3.0 (TID 39)
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 15 ms
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:44 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 5 ms
+19/02/25 01:25:46 INFO Executor: Finished task 8.0 in stage 3.0 (TID 39). 3788 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 40
+19/02/25 01:25:46 INFO Executor: Running task 9.0 in stage 3.0 (TID 40)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 20 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 0 local blocks and 3 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:25:46 INFO Executor: Finished task 5.0 in stage 3.0 (TID 36). 3788 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 41
+19/02/25 01:25:46 INFO Executor: Running task 10.0 in stage 3.0 (TID 41)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 13 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:46 INFO Executor: Finished task 9.0 in stage 3.0 (TID 40). 3788 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 42
+19/02/25 01:25:46 INFO Executor: Running task 11.0 in stage 3.0 (TID 42)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 34 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:46 INFO Executor: Finished task 10.0 in stage 3.0 (TID 41). 3745 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 43
+19/02/25 01:25:46 INFO Executor: Running task 12.0 in stage 3.0 (TID 43)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:25:46 INFO Executor: Finished task 11.0 in stage 3.0 (TID 42). 3745 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 44
+19/02/25 01:25:46 INFO Executor: Running task 13.0 in stage 3.0 (TID 44)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 26 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 47 ms
+19/02/25 01:25:46 INFO Executor: Finished task 12.0 in stage 3.0 (TID 43). 3745 bytes result sent to driver
+19/02/25 01:25:46 INFO CoarseGrainedExecutorBackend: Got assigned task 45
+19/02/25 01:25:46 INFO Executor: Running task 14.0 in stage 3.0 (TID 45)
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 9 ms
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 0 local blocks and 4 remote blocks
+19/02/25 01:25:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 45 ms
+19/02/25 01:25:47 INFO Executor: Finished task 13.0 in stage 3.0 (TID 44). 3788 bytes result sent to driver
+19/02/25 01:25:47 INFO CoarseGrainedExecutorBackend: Got assigned task 46
+19/02/25 01:25:47 INFO Executor: Running task 15.0 in stage 3.0 (TID 46)
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 0 local blocks and 3 remote blocks
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:47 INFO Executor: Finished task 14.0 in stage 3.0 (TID 45). 3745 bytes result sent to driver
+19/02/25 01:25:47 INFO CoarseGrainedExecutorBackend: Got assigned task 47
+19/02/25 01:25:47 INFO Executor: Running task 16.0 in stage 3.0 (TID 47)
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 0 local blocks and 3 remote blocks
+19/02/25 01:25:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:25:48 INFO Executor: Finished task 16.0 in stage 3.0 (TID 47). 3745 bytes result sent to driver
+19/02/25 01:25:48 INFO CoarseGrainedExecutorBackend: Got assigned task 48
+19/02/25 01:25:48 INFO Executor: Running task 17.0 in stage 3.0 (TID 48)
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 9 ms
+19/02/25 01:25:48 INFO Executor: Finished task 17.0 in stage 3.0 (TID 48). 3745 bytes result sent to driver
+19/02/25 01:25:48 INFO CoarseGrainedExecutorBackend: Got assigned task 49
+19/02/25 01:25:48 INFO Executor: Running task 18.0 in stage 3.0 (TID 49)
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 0 local blocks and 3 remote blocks
+19/02/25 01:25:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:49 INFO Executor: Finished task 18.0 in stage 3.0 (TID 49). 3745 bytes result sent to driver
+19/02/25 01:25:49 INFO CoarseGrainedExecutorBackend: Got assigned task 50
+19/02/25 01:25:49 INFO Executor: Running task 19.0 in stage 3.0 (TID 50)
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:25:49 INFO Executor: Finished task 19.0 in stage 3.0 (TID 50). 3745 bytes result sent to driver
+19/02/25 01:25:49 INFO CoarseGrainedExecutorBackend: Got assigned task 51
+19/02/25 01:25:49 INFO Executor: Running task 20.0 in stage 3.0 (TID 51)
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 12 ms
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 9 ms
+19/02/25 01:25:49 INFO Executor: Finished task 20.0 in stage 3.0 (TID 51). 3745 bytes result sent to driver
+19/02/25 01:25:49 INFO CoarseGrainedExecutorBackend: Got assigned task 52
+19/02/25 01:25:49 INFO Executor: Running task 21.0 in stage 3.0 (TID 52)
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 0 local blocks and 1 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:25:49 INFO Executor: Finished task 15.0 in stage 3.0 (TID 46). 3745 bytes result sent to driver
+19/02/25 01:25:49 INFO CoarseGrainedExecutorBackend: Got assigned task 53
+19/02/25 01:25:49 INFO Executor: Running task 22.0 in stage 3.0 (TID 53)
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks including 0 local blocks and 6 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 0 local blocks and 2 remote blocks
+19/02/25 01:25:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:25:49 INFO Executor: Finished task 22.0 in stage 3.0 (TID 53). 3745 bytes result sent to driver
+19/02/25 01:25:50 INFO Executor: Finished task 21.0 in stage 3.0 (TID 52). 3745 bytes result sent to driver
+19/02/25 01:26:02 INFO Executor: Finished task 9.0 in stage 4.0 (TID 30). 1662 bytes result sent to driver
+19/02/25 01:26:02 INFO Executor: Finished task 8.0 in stage 4.0 (TID 29). 1619 bytes result sent to driver
+19/02/25 01:27:20 INFO CoarseGrainedExecutorBackend: Got assigned task 432
+19/02/25 01:27:20 INFO CoarseGrainedExecutorBackend: Got assigned task 435
+19/02/25 01:27:20 INFO CoarseGrainedExecutorBackend: Got assigned task 438
+19/02/25 01:27:20 INFO CoarseGrainedExecutorBackend: Got assigned task 441
+19/02/25 01:27:20 INFO Executor: Running task 0.0 in stage 7.0 (TID 432)
+19/02/25 01:27:20 INFO Executor: Running task 3.0 in stage 7.0 (TID 435)
+19/02/25 01:27:20 INFO MapOutputTrackerWorker: Updating epoch to 5 and clearing cache
+19/02/25 01:27:20 INFO TorrentBroadcast: Started reading broadcast variable 15
+19/02/25 01:27:20 INFO Executor: Running task 6.0 in stage 7.0 (TID 438)
+19/02/25 01:27:20 INFO Executor: Running task 9.0 in stage 7.0 (TID 441)
+19/02/25 01:27:20 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 6.8 KB, free 2.5 GB)
+19/02/25 01:27:20 INFO TorrentBroadcast: Reading broadcast variable 15 took 11 ms
+19/02/25 01:27:20 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 13.3 KB, free 2.5 GB)
+19/02/25 01:27:20 INFO CodeGenerator: Code generated in 24.936501 ms
+19/02/25 01:27:20 INFO CodeGenerator: Code generated in 24.02739 ms
+19/02/25 01:27:20 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 0-110289677, partition values: [empty row]
+19/02/25 01:27:20 INFO TorrentBroadcast: Started reading broadcast variable 12
+19/02/25 01:27:20 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 992607093-1102896770, partition values: [empty row]
+19/02/25 01:27:20 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 330869031-441158708, partition values: [empty row]
+19/02/25 01:27:20 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 661738062-772027739, partition values: [empty row]
+19/02/25 01:27:20 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 26.4 KB, free 2.5 GB)
+19/02/25 01:27:20 INFO TorrentBroadcast: Reading broadcast variable 12 took 7 ms
+19/02/25 01:27:20 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 340.9 KB, free 2.5 GB)
+19/02/25 01:27:20 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:27:20 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:27:20 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:27:20 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:06 INFO Executor: Finished task 9.0 in stage 7.0 (TID 441). 1619 bytes result sent to driver
+19/02/25 01:28:06 INFO CoarseGrainedExecutorBackend: Got assigned task 448
+19/02/25 01:28:06 INFO Executor: Running task 4.0 in stage 8.0 (TID 448)
+19/02/25 01:28:06 INFO TorrentBroadcast: Started reading broadcast variable 16
+19/02/25 01:28:06 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 6.8 KB, free 2.5 GB)
+19/02/25 01:28:06 INFO TorrentBroadcast: Reading broadcast variable 16 took 22 ms
+19/02/25 01:28:06 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 13.3 KB, free 2.5 GB)
+19/02/25 01:28:06 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 441158708-551448385, partition values: [empty row]
+19/02/25 01:28:06 INFO TorrentBroadcast: Started reading broadcast variable 13
+19/02/25 01:28:06 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 26.4 KB, free 2.5 GB)
+19/02/25 01:28:06 INFO TorrentBroadcast: Reading broadcast variable 13 took 25 ms
+19/02/25 01:28:06 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 340.9 KB, free 2.5 GB)
+19/02/25 01:28:06 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:06 INFO Executor: Finished task 3.0 in stage 7.0 (TID 435). 1748 bytes result sent to driver
+19/02/25 01:28:06 INFO CoarseGrainedExecutorBackend: Got assigned task 450
+19/02/25 01:28:06 INFO Executor: Running task 6.0 in stage 8.0 (TID 450)
+19/02/25 01:28:06 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 661738062-772027739, partition values: [empty row]
+19/02/25 01:28:06 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:06 INFO Executor: Finished task 0.0 in stage 7.0 (TID 432). 1791 bytes result sent to driver
+19/02/25 01:28:06 INFO CoarseGrainedExecutorBackend: Got assigned task 453
+19/02/25 01:28:06 INFO Executor: Running task 9.0 in stage 8.0 (TID 453)
+19/02/25 01:28:06 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 992607093-1102896770, partition values: [empty row]
+19/02/25 01:28:06 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:08 INFO Executor: Finished task 6.0 in stage 7.0 (TID 438). 1748 bytes result sent to driver
+19/02/25 01:28:08 INFO CoarseGrainedExecutorBackend: Got assigned task 455
+19/02/25 01:28:08 INFO Executor: Running task 11.0 in stage 8.0 (TID 455)
+19/02/25 01:28:08 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1213186447-1319281825, partition values: [empty row]
+19/02/25 01:28:08 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:49 INFO Executor: Finished task 11.0 in stage 8.0 (TID 455). 1619 bytes result sent to driver
+19/02/25 01:28:49 INFO CoarseGrainedExecutorBackend: Got assigned task 458
+19/02/25 01:28:49 INFO Executor: Running task 2.0 in stage 10.0 (TID 458)
+19/02/25 01:28:49 INFO TorrentBroadcast: Started reading broadcast variable 17
+19/02/25 01:28:49 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 6.8 KB, free 2.5 GB)
+19/02/25 01:28:49 INFO TorrentBroadcast: Reading broadcast variable 17 took 11 ms
+19/02/25 01:28:49 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 13.3 KB, free 2.5 GB)
+19/02/25 01:28:49 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 220579354-330869031, partition values: [empty row]
+19/02/25 01:28:49 INFO TorrentBroadcast: Started reading broadcast variable 14
+19/02/25 01:28:49 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 26.4 KB, free 2.5 GB)
+19/02/25 01:28:49 INFO TorrentBroadcast: Reading broadcast variable 14 took 9 ms
+19/02/25 01:28:49 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 340.9 KB, free 2.5 GB)
+19/02/25 01:28:49 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:52 INFO Executor: Finished task 9.0 in stage 8.0 (TID 453). 1619 bytes result sent to driver
+19/02/25 01:28:52 INFO CoarseGrainedExecutorBackend: Got assigned task 462
+19/02/25 01:28:52 INFO Executor: Running task 6.0 in stage 10.0 (TID 462)
+19/02/25 01:28:52 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 661738062-772027739, partition values: [empty row]
+19/02/25 01:28:52 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:52 INFO Executor: Finished task 4.0 in stage 8.0 (TID 448). 1748 bytes result sent to driver
+19/02/25 01:28:52 INFO CoarseGrainedExecutorBackend: Got assigned task 463
+19/02/25 01:28:52 INFO Executor: Running task 7.0 in stage 10.0 (TID 463)
+19/02/25 01:28:52 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 772027739-882317416, partition values: [empty row]
+19/02/25 01:28:52 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:28:54 INFO Executor: Finished task 6.0 in stage 8.0 (TID 450). 1748 bytes result sent to driver
+19/02/25 01:28:54 INFO CoarseGrainedExecutorBackend: Got assigned task 467
+19/02/25 01:28:54 INFO Executor: Running task 11.0 in stage 10.0 (TID 467)
+19/02/25 01:28:54 INFO FileScanRDD: Reading File path: s3://mr-input/edges.csv, range: 1213186447-1319281825, partition values: [empty row]
+19/02/25 01:28:54 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 01:29:33 INFO Executor: Finished task 2.0 in stage 10.0 (TID 458). 1748 bytes result sent to driver
+19/02/25 01:29:33 INFO CoarseGrainedExecutorBackend: Got assigned task 472
+19/02/25 01:29:33 INFO Executor: Running task 0.0 in stage 9.0 (TID 472)
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Updating epoch to 7 and clearing cache
+19/02/25 01:29:33 INFO TorrentBroadcast: Started reading broadcast variable 18
+19/02/25 01:29:33 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 12.7 KB, free 2.5 GB)
+19/02/25 01:29:33 INFO TorrentBroadcast: Reading broadcast variable 18 took 9 ms
+19/02/25 01:29:33 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 29.1 KB, free 2.5 GB)
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 5, fetching them
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:29:33 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:33 INFO TransportClientFactory: Found inactive connection to ip-172-31-94-11.ec2.internal/172.31.94.11:7337, creating a new one.
+19/02/25 01:29:33 INFO TransportClientFactory: Successfully created connection to ip-172-31-94-11.ec2.internal/172.31.94.11:7337 after 16 ms (0 ms spent in bootstraps)
+19/02/25 01:29:33 INFO TransportClientFactory: Found inactive connection to ip-172-31-90-64.ec2.internal/172.31.90.64:7337, creating a new one.
+19/02/25 01:29:33 INFO TransportClientFactory: Successfully created connection to ip-172-31-90-64.ec2.internal/172.31.90.64:7337 after 4 ms (0 ms spent in bootstraps)
+19/02/25 01:29:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 33 ms
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 6, fetching them
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:29:33 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:29:33 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:33 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 2 ms
+19/02/25 01:29:34 INFO Executor: Finished task 0.0 in stage 9.0 (TID 472). 3745 bytes result sent to driver
+19/02/25 01:29:34 INFO CoarseGrainedExecutorBackend: Got assigned task 483
+19/02/25 01:29:34 INFO Executor: Running task 1.0 in stage 9.0 (TID 483)
+19/02/25 01:29:34 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:34 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 2 local blocks and 0 remote blocks
+19/02/25 01:29:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+19/02/25 01:29:35 INFO Executor: Finished task 11.0 in stage 10.0 (TID 467). 1619 bytes result sent to driver
+19/02/25 01:29:35 INFO CoarseGrainedExecutorBackend: Got assigned task 501
+19/02/25 01:29:35 INFO Executor: Running task 3.0 in stage 9.0 (TID 501)
+19/02/25 01:29:35 INFO Executor: Finished task 1.0 in stage 9.0 (TID 483). 3745 bytes result sent to driver
+19/02/25 01:29:35 INFO CoarseGrainedExecutorBackend: Got assigned task 502
+19/02/25 01:29:35 INFO Executor: Running task 5.0 in stage 9.0 (TID 502)
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 2 local blocks and 2 remote blocks
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 17 ms
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:35 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:37 INFO Executor: Finished task 3.0 in stage 9.0 (TID 501). 3788 bytes result sent to driver
+19/02/25 01:29:37 INFO CoarseGrainedExecutorBackend: Got assigned task 519
+19/02/25 01:29:37 INFO Executor: Running task 8.0 in stage 9.0 (TID 519)
+19/02/25 01:29:37 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:29:37 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:37 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 9 ms
+19/02/25 01:29:38 INFO Executor: Finished task 8.0 in stage 9.0 (TID 519). 3745 bytes result sent to driver
+19/02/25 01:29:38 INFO CoarseGrainedExecutorBackend: Got assigned task 541
+19/02/25 01:29:38 INFO Executor: Running task 15.0 in stage 9.0 (TID 541)
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:38 INFO Executor: Finished task 5.0 in stage 9.0 (TID 502). 3745 bytes result sent to driver
+19/02/25 01:29:38 INFO CoarseGrainedExecutorBackend: Got assigned task 545
+19/02/25 01:29:38 INFO Executor: Running task 16.0 in stage 9.0 (TID 545)
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:38 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:39 INFO Executor: Finished task 7.0 in stage 10.0 (TID 463). 1662 bytes result sent to driver
+19/02/25 01:29:39 INFO CoarseGrainedExecutorBackend: Got assigned task 552
+19/02/25 01:29:39 INFO Executor: Running task 21.0 in stage 9.0 (TID 552)
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/02/25 01:29:39 INFO Executor: Finished task 16.0 in stage 9.0 (TID 545). 3745 bytes result sent to driver
+19/02/25 01:29:39 INFO CoarseGrainedExecutorBackend: Got assigned task 563
+19/02/25 01:29:39 INFO Executor: Running task 27.0 in stage 9.0 (TID 563)
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 19 ms
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:39 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 2 ms
+19/02/25 01:29:40 INFO Executor: Finished task 21.0 in stage 9.0 (TID 552). 3745 bytes result sent to driver
+19/02/25 01:29:40 INFO CoarseGrainedExecutorBackend: Got assigned task 569
+19/02/25 01:29:40 INFO Executor: Running task 28.0 in stage 9.0 (TID 569)
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 9 ms
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 10 ms
+19/02/25 01:29:40 INFO Executor: Finished task 6.0 in stage 10.0 (TID 462). 1791 bytes result sent to driver
+19/02/25 01:29:40 INFO CoarseGrainedExecutorBackend: Got assigned task 571
+19/02/25 01:29:40 INFO Executor: Running task 30.0 in stage 9.0 (TID 571)
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:40 INFO Executor: Finished task 15.0 in stage 9.0 (TID 541). 3745 bytes result sent to driver
+19/02/25 01:29:40 INFO CoarseGrainedExecutorBackend: Got assigned task 578
+19/02/25 01:29:40 INFO Executor: Running task 40.0 in stage 9.0 (TID 578)
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:40 INFO Executor: Finished task 27.0 in stage 9.0 (TID 563). 3745 bytes result sent to driver
+19/02/25 01:29:40 INFO CoarseGrainedExecutorBackend: Got assigned task 581
+19/02/25 01:29:40 INFO Executor: Running task 58.0 in stage 9.0 (TID 581)
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:41 INFO Executor: Finished task 28.0 in stage 9.0 (TID 569). 3745 bytes result sent to driver
+19/02/25 01:29:41 INFO CoarseGrainedExecutorBackend: Got assigned task 594
+19/02/25 01:29:41 INFO Executor: Running task 64.0 in stage 9.0 (TID 594)
+19/02/25 01:29:41 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 9 ms
+19/02/25 01:29:41 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:41 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:44 INFO Executor: Finished task 58.0 in stage 9.0 (TID 581). 3745 bytes result sent to driver
+19/02/25 01:29:44 INFO CoarseGrainedExecutorBackend: Got assigned task 640
+19/02/25 01:29:44 INFO Executor: Running task 72.0 in stage 9.0 (TID 640)
+19/02/25 01:29:44 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 13 ms
+19/02/25 01:29:44 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:44 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:45 INFO Executor: Finished task 72.0 in stage 9.0 (TID 640). 3745 bytes result sent to driver
+19/02/25 01:29:45 INFO CoarseGrainedExecutorBackend: Got assigned task 641
+19/02/25 01:29:45 INFO Executor: Running task 75.0 in stage 9.0 (TID 641)
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 14 ms
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:45 INFO Executor: Finished task 40.0 in stage 9.0 (TID 578). 3745 bytes result sent to driver
+19/02/25 01:29:45 INFO CoarseGrainedExecutorBackend: Got assigned task 642
+19/02/25 01:29:45 INFO Executor: Running task 80.0 in stage 9.0 (TID 642)
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:45 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:46 INFO Executor: Finished task 75.0 in stage 9.0 (TID 641). 3745 bytes result sent to driver
+19/02/25 01:29:46 INFO CoarseGrainedExecutorBackend: Got assigned task 643
+19/02/25 01:29:46 INFO Executor: Running task 87.0 in stage 9.0 (TID 643)
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:46 INFO Executor: Finished task 87.0 in stage 9.0 (TID 643). 3745 bytes result sent to driver
+19/02/25 01:29:46 INFO CoarseGrainedExecutorBackend: Got assigned task 644
+19/02/25 01:29:46 INFO Executor: Running task 94.0 in stage 9.0 (TID 644)
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 10 ms
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:48 INFO Executor: Finished task 94.0 in stage 9.0 (TID 644). 3745 bytes result sent to driver
+19/02/25 01:29:48 INFO CoarseGrainedExecutorBackend: Got assigned task 645
+19/02/25 01:29:48 INFO Executor: Running task 95.0 in stage 9.0 (TID 645)
+19/02/25 01:29:48 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 13 ms
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:49 INFO Executor: Finished task 64.0 in stage 9.0 (TID 594). 3788 bytes result sent to driver
+19/02/25 01:29:49 INFO CoarseGrainedExecutorBackend: Got assigned task 646
+19/02/25 01:29:49 INFO Executor: Running task 97.0 in stage 9.0 (TID 646)
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:49 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:50 INFO Executor: Finished task 95.0 in stage 9.0 (TID 645). 3745 bytes result sent to driver
+19/02/25 01:29:50 INFO CoarseGrainedExecutorBackend: Got assigned task 647
+19/02/25 01:29:50 INFO Executor: Running task 98.0 in stage 9.0 (TID 647)
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 15 ms
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:29:50 INFO Executor: Finished task 80.0 in stage 9.0 (TID 642). 3745 bytes result sent to driver
+19/02/25 01:29:50 INFO CoarseGrainedExecutorBackend: Got assigned task 648
+19/02/25 01:29:50 INFO Executor: Running task 109.0 in stage 9.0 (TID 648)
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 2 local blocks and 0 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/02/25 01:29:50 INFO Executor: Finished task 97.0 in stage 9.0 (TID 646). 3745 bytes result sent to driver
+19/02/25 01:29:50 INFO CoarseGrainedExecutorBackend: Got assigned task 649
+19/02/25 01:29:50 INFO Executor: Running task 111.0 in stage 9.0 (TID 649)
+19/02/25 01:29:50 INFO Executor: Finished task 98.0 in stage 9.0 (TID 647). 3745 bytes result sent to driver
+19/02/25 01:29:50 INFO CoarseGrainedExecutorBackend: Got assigned task 650
+19/02/25 01:29:50 INFO Executor: Running task 113.0 in stage 9.0 (TID 650)
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 2 local blocks and 0 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 2 local blocks and 2 remote blocks
+19/02/25 01:29:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 11 ms
+19/02/25 01:29:51 INFO Executor: Finished task 109.0 in stage 9.0 (TID 648). 3788 bytes result sent to driver
+19/02/25 01:29:51 INFO CoarseGrainedExecutorBackend: Got assigned task 651
+19/02/25 01:29:51 INFO Executor: Running task 120.0 in stage 9.0 (TID 651)
+19/02/25 01:29:51 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:29:51 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:51 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:53 INFO Executor: Finished task 120.0 in stage 9.0 (TID 651). 3745 bytes result sent to driver
+19/02/25 01:29:53 INFO CoarseGrainedExecutorBackend: Got assigned task 652
+19/02/25 01:29:53 INFO Executor: Running task 125.0 in stage 9.0 (TID 652)
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 2 local blocks and 2 remote blocks
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:29:53 INFO Executor: Finished task 113.0 in stage 9.0 (TID 650). 3745 bytes result sent to driver
+19/02/25 01:29:53 INFO CoarseGrainedExecutorBackend: Got assigned task 653
+19/02/25 01:29:53 INFO Executor: Running task 134.0 in stage 9.0 (TID 653)
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:53 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 2 ms
+19/02/25 01:29:54 INFO Executor: Finished task 125.0 in stage 9.0 (TID 652). 3745 bytes result sent to driver
+19/02/25 01:29:54 INFO CoarseGrainedExecutorBackend: Got assigned task 654
+19/02/25 01:29:54 INFO Executor: Running task 136.0 in stage 9.0 (TID 654)
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 2 local blocks and 2 remote blocks
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:29:54 INFO Executor: Finished task 136.0 in stage 9.0 (TID 654). 3745 bytes result sent to driver
+19/02/25 01:29:54 INFO CoarseGrainedExecutorBackend: Got assigned task 655
+19/02/25 01:29:54 INFO Executor: Running task 138.0 in stage 9.0 (TID 655)
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:29:56 INFO Executor: Finished task 134.0 in stage 9.0 (TID 653). 3745 bytes result sent to driver
+19/02/25 01:29:56 INFO CoarseGrainedExecutorBackend: Got assigned task 656
+19/02/25 01:29:56 INFO Executor: Running task 142.0 in stage 9.0 (TID 656)
+19/02/25 01:29:56 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 18 ms
+19/02/25 01:29:56 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:56 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 2 ms
+19/02/25 01:29:57 INFO Executor: Finished task 111.0 in stage 9.0 (TID 649). 3745 bytes result sent to driver
+19/02/25 01:29:57 INFO CoarseGrainedExecutorBackend: Got assigned task 657
+19/02/25 01:29:57 INFO Executor: Running task 146.0 in stage 9.0 (TID 657)
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:57 INFO Executor: Finished task 146.0 in stage 9.0 (TID 657). 3745 bytes result sent to driver
+19/02/25 01:29:57 INFO CoarseGrainedExecutorBackend: Got assigned task 658
+19/02/25 01:29:57 INFO Executor: Running task 149.0 in stage 9.0 (TID 658)
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:57 INFO Executor: Finished task 138.0 in stage 9.0 (TID 655). 3745 bytes result sent to driver
+19/02/25 01:29:57 INFO CoarseGrainedExecutorBackend: Got assigned task 659
+19/02/25 01:29:57 INFO Executor: Running task 153.0 in stage 9.0 (TID 659)
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:57 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 9 ms
+19/02/25 01:29:58 INFO Executor: Finished task 153.0 in stage 9.0 (TID 659). 3745 bytes result sent to driver
+19/02/25 01:29:58 INFO CoarseGrainedExecutorBackend: Got assigned task 660
+19/02/25 01:29:58 INFO Executor: Running task 154.0 in stage 9.0 (TID 660)
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks including 1 local blocks and 1 remote blocks
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 1 ms
+19/02/25 01:29:58 INFO Executor: Finished task 149.0 in stage 9.0 (TID 658). 3745 bytes result sent to driver
+19/02/25 01:29:58 INFO CoarseGrainedExecutorBackend: Got assigned task 661
+19/02/25 01:29:58 INFO Executor: Running task 162.0 in stage 9.0 (TID 661)
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 6 ms
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+19/02/25 01:29:58 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/02/25 01:29:59 INFO Executor: Finished task 142.0 in stage 9.0 (TID 656). 3745 bytes result sent to driver
+19/02/25 01:29:59 INFO CoarseGrainedExecutorBackend: Got assigned task 662
+19/02/25 01:29:59 INFO Executor: Running task 167.0 in stage 9.0 (TID 662)
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 2 local blocks and 1 remote blocks
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Started 1 remote fetches in 0 ms
+19/02/25 01:29:59 INFO Executor: Finished task 154.0 in stage 9.0 (TID 660). 3745 bytes result sent to driver
+19/02/25 01:29:59 INFO CoarseGrainedExecutorBackend: Got assigned task 663
+19/02/25 01:29:59 INFO Executor: Running task 178.0 in stage 9.0 (TID 663)
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:29:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 12 ms
+19/02/25 01:30:00 INFO Executor: Finished task 162.0 in stage 9.0 (TID 661). 3788 bytes result sent to driver
+19/02/25 01:30:00 INFO CoarseGrainedExecutorBackend: Got assigned task 664
+19/02/25 01:30:00 INFO Executor: Running task 184.0 in stage 9.0 (TID 664)
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks including 1 local blocks and 3 remote blocks
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:00 INFO Executor: Finished task 167.0 in stage 9.0 (TID 662). 3788 bytes result sent to driver
+19/02/25 01:30:00 INFO CoarseGrainedExecutorBackend: Got assigned task 665
+19/02/25 01:30:00 INFO Executor: Running task 189.0 in stage 9.0 (TID 665)
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 9 ms
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:30:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 5 ms
+19/02/25 01:30:01 INFO Executor: Finished task 178.0 in stage 9.0 (TID 663). 3745 bytes result sent to driver
+19/02/25 01:30:01 INFO CoarseGrainedExecutorBackend: Got assigned task 666
+19/02/25 01:30:01 INFO Executor: Running task 193.0 in stage 9.0 (TID 666)
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/02/25 01:30:01 INFO Executor: Finished task 184.0 in stage 9.0 (TID 664). 3745 bytes result sent to driver
+19/02/25 01:30:01 INFO CoarseGrainedExecutorBackend: Got assigned task 667
+19/02/25 01:30:01 INFO Executor: Running task 198.0 in stage 9.0 (TID 667)
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 3 local blocks and 4 remote blocks
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks including 1 local blocks and 2 remote blocks
+19/02/25 01:30:01 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:01 INFO Executor: Finished task 193.0 in stage 9.0 (TID 666). 3745 bytes result sent to driver
+19/02/25 01:30:01 INFO Executor: Finished task 189.0 in stage 9.0 (TID 665). 3745 bytes result sent to driver
+19/02/25 01:30:02 INFO Executor: Finished task 198.0 in stage 9.0 (TID 667). 3745 bytes result sent to driver
+19/02/25 01:30:04 INFO Executor: Finished task 30.0 in stage 9.0 (TID 571). 3745 bytes result sent to driver
+19/02/25 01:30:04 INFO CoarseGrainedExecutorBackend: Got assigned task 668
+19/02/25 01:30:04 INFO Executor: Running task 0.0 in stage 11.0 (TID 668)
+19/02/25 01:30:04 INFO MapOutputTrackerWorker: Updating epoch to 9 and clearing cache
+19/02/25 01:30:04 INFO TorrentBroadcast: Started reading broadcast variable 19
+19/02/25 01:30:04 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 67.8 KB, free 2.5 GB)
+19/02/25 01:30:04 INFO TorrentBroadcast: Reading broadcast variable 19 took 10 ms
+19/02/25 01:30:04 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 182.2 KB, free 2.5 GB)
+19/02/25 01:30:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+19/02/25 01:30:05 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/02/25 01:30:05 INFO DirectFileOutputCommitter: Direct Write: DISABLED
+19/02/25 01:30:05 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.DirectFileOutputCommitter
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 7, fetching them
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:30:05 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:30:05 INFO CodeGenerator: Code generated in 35.949623 ms
+19/02/25 01:30:05 INFO CodeGenerator: Code generated in 31.505116 ms
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 8, fetching them
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@ip-172-31-80-113.ec2.internal:37443)
+19/02/25 01:30:05 INFO MapOutputTrackerWorker: Got the output locations
+19/02/25 01:30:05 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:05 INFO CodeGenerator: Code generated in 21.651317 ms
+19/02/25 01:30:05 INFO CodeGenerator: Code generated in 26.815869 ms
+19/02/25 01:30:05 INFO CodeGenerator: Code generated in 50.376483 ms
+19/02/25 01:30:06 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:06 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:06 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:06 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:07 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:07 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 11 ms
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:10 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:10 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:14 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:30:14 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Getting 199 non-empty blocks including 42 local blocks and 157 remote blocks
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:19 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:19 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:22 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:22 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 5 ms
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:27 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:27 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 12 ms
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 9 ms
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:37 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:37 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 6 ms
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:42 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:42 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:48 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:48 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:55 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:55 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:57 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:58 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:30:59 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 7 ms
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:00 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:01 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:01 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:01 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:01 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:02 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:03 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Getting 199 non-empty blocks including 42 local blocks and 157 remote blocks
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:04 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:05 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:06 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:06 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:06 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:06 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:07 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 5 ms
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:08 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:09 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:31:09 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:09 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:10 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:11 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:12 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:13 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:13 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:13 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:14 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:15 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 15 ms
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:16 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:17 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:17 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:17 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Getting 199 non-empty blocks including 42 local blocks and 157 remote blocks
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:18 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:19 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:20 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:21 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:22 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:23 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:24 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:25 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:26 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:27 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:28 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:29 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:31:29 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:29 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 8 ms
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:30 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:31 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:32 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:33 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:34 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:35 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:36 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:36 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:36 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 3 ms
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:37 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:38 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:39 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:40 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:41 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:41 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:41 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:42 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 4 ms
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:43 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:44 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:45 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 2 ms
+19/02/25 01:31:46 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:46 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:46 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:47 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:48 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:49 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:50 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:50 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:50 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:51 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:52 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:53 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:54 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:54 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:54 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 0 ms
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:55 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Getting 200 non-empty blocks including 42 local blocks and 158 remote blocks
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Getting 7 non-empty blocks including 2 local blocks and 5 remote blocks
+19/02/25 01:31:56 INFO ShuffleBlockFetcherIterator: Started 2 remote fetches in 1 ms
+19/02/25 01:31:57 INFO FileOutputCommitter: Saved output of task 'attempt_20190225013004_0011_m_000000_0' to hdfs://ip-172-31-80-113.ec2.internal:8020/user/hadoop/output2/_temporary/0/task_20190225013004_0011_m_000000
+19/02/25 01:31:57 INFO SparkHadoopMapRedUtil: attempt_20190225013004_0011_m_000000_0: Committed
+19/02/25 01:31:57 WARN Executor: Managed memory leak detected; size = 2617245696 bytes, TID = 668
+19/02/25 01:31:57 INFO Executor: Finished task 0.0 in stage 11.0 (TID 668). 5887 bytes result sent to driver
+19/02/25 01:31:57 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+19/02/25 01:31:57 INFO MemoryStore: MemoryStore cleared
+19/02/25 01:31:57 INFO BlockManager: BlockManager stopped
+19/02/25 01:31:57 INFO ShutdownHookManager: Shutdown hook called
+19/02/25 01:31:57 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0003/spark-f00a0351-d954-4c9b-9157-5067e4efa483

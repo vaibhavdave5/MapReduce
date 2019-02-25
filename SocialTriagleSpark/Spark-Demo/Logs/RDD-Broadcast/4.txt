@@ -1,0 +1,163 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/10/__spark_libs__6942929119226805325.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+19/02/25 00:41:19 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 9042@ip-172-31-87-58
+19/02/25 00:41:19 INFO SignalUtils: Registered signal handler for TERM
+19/02/25 00:41:19 INFO SignalUtils: Registered signal handler for HUP
+19/02/25 00:41:19 INFO SignalUtils: Registered signal handler for INT
+19/02/25 00:41:20 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/02/25 00:41:20 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/02/25 00:41:20 INFO SecurityManager: Changing view acls groups to: 
+19/02/25 00:41:20 INFO SecurityManager: Changing modify acls groups to: 
+19/02/25 00:41:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/02/25 00:41:20 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:41381 after 118 ms (0 ms spent in bootstraps)
+19/02/25 00:41:21 INFO SecurityManager: Changing view acls to: yarn,hadoop
+19/02/25 00:41:21 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+19/02/25 00:41:21 INFO SecurityManager: Changing view acls groups to: 
+19/02/25 00:41:21 INFO SecurityManager: Changing modify acls groups to: 
+19/02/25 00:41:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+19/02/25 00:41:21 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:41381 after 2 ms (0 ms spent in bootstraps)
+19/02/25 00:41:21 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/blockmgr-bd14712f-dcad-4d90-aa27-bdee1c56edf8
+19/02/25 00:41:21 INFO MemoryStore: MemoryStore started with capacity 2.5 GB
+19/02/25 00:41:21 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ip-172-31-80-113.ec2.internal:41381
+19/02/25 00:41:21 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+19/02/25 00:41:21 INFO Executor: Starting executor ID 1 on host ip-172-31-87-58.ec2.internal
+19/02/25 00:41:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37071.
+19/02/25 00:41:22 INFO NettyBlockTransferService: Server created on ip-172-31-87-58.ec2.internal:37071
+19/02/25 00:41:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/02/25 00:41:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(1, ip-172-31-87-58.ec2.internal, 37071, None)
+19/02/25 00:41:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(1, ip-172-31-87-58.ec2.internal, 37071, None)
+19/02/25 00:41:22 INFO BlockManager: external shuffle service port = 7337
+19/02/25 00:41:22 INFO BlockManager: Registering executor with local external shuffle service.
+19/02/25 00:41:22 INFO TransportClientFactory: Successfully created connection to ip-172-31-87-58.ec2.internal/172.31.87.58:7337 after 11 ms (0 ms spent in bootstraps)
+19/02/25 00:41:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(1, ip-172-31-87-58.ec2.internal, 37071, None)
+19/02/25 00:41:22 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+19/02/25 00:41:22 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+19/02/25 00:41:22 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+19/02/25 00:41:22 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+19/02/25 00:41:22 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+19/02/25 00:41:22 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+19/02/25 00:41:22 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+19/02/25 00:41:22 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+19/02/25 00:41:22 INFO Executor: Fetching spark://ip-172-31-80-113.ec2.internal:41381/jars/original-spark-demo-1.0.jar with timestamp 1551055252395
+19/02/25 00:41:22 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:41381 after 12 ms (0 ms spent in bootstraps)
+19/02/25 00:41:22 INFO Utils: Fetching spark://ip-172-31-80-113.ec2.internal:41381/jars/original-spark-demo-1.0.jar to /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/spark-ccf2a12d-0f4d-4b8b-8c99-0004e2869d83/fetchFileTemp1563995409046428624.tmp
+19/02/25 00:41:22 INFO Utils: Copying /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/spark-ccf2a12d-0f4d-4b8b-8c99-0004e2869d83/-14974240291551055252395_cache to /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/container_1551054971382_0001_01_000002/./original-spark-demo-1.0.jar
+19/02/25 00:41:22 INFO Executor: Adding file:/mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/container_1551054971382_0001_01_000002/./original-spark-demo-1.0.jar to class loader
+19/02/25 00:41:22 INFO TorrentBroadcast: Started reading broadcast variable 1
+19/02/25 00:41:22 INFO TransportClientFactory: Successfully created connection to ip-172-31-80-113.ec2.internal/172.31.80.113:41467 after 4 ms (0 ms spent in bootstraps)
+19/02/25 00:41:22 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 2.5 GB)
+19/02/25 00:41:22 INFO TorrentBroadcast: Reading broadcast variable 1 took 247 ms
+19/02/25 00:41:23 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.0 KB, free 2.5 GB)
+19/02/25 00:41:23 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:201326592+67108864
+19/02/25 00:41:23 INFO TorrentBroadcast: Started reading broadcast variable 0
+19/02/25 00:41:23 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:67108864+67108864
+19/02/25 00:41:23 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:134217728+67108864
+19/02/25 00:41:23 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:0+67108864
+19/02/25 00:41:23 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.7 KB, free 2.5 GB)
+19/02/25 00:41:23 INFO TorrentBroadcast: Reading broadcast variable 0 took 12 ms
+19/02/25 00:41:23 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 317.3 KB, free 2.5 GB)
+19/02/25 00:41:24 INFO GPLNativeCodeLoader: Loaded native gpl library
+19/02/25 00:41:24 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev 1546b8dc0ca6f1ffd26a812d52bd7b80915e0a25]
+19/02/25 00:41:27 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:27 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:27 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:27 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:42 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 833 bytes result sent to driver
+19/02/25 00:41:42 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+19/02/25 00:41:42 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+19/02/25 00:41:42 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:805306368+67108864
+19/02/25 00:41:42 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:42 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1583 bytes result sent to driver
+19/02/25 00:41:42 INFO CoarseGrainedExecutorBackend: Got assigned task 13
+19/02/25 00:41:42 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+19/02/25 00:41:42 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:872415232+67108864
+19/02/25 00:41:42 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:43 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 6417 bytes result sent to driver
+19/02/25 00:41:43 INFO CoarseGrainedExecutorBackend: Got assigned task 14
+19/02/25 00:41:43 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+19/02/25 00:41:43 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:939524096+67108864
+19/02/25 00:41:43 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:43 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1096 bytes result sent to driver
+19/02/25 00:41:43 INFO CoarseGrainedExecutorBackend: Got assigned task 15
+19/02/25 00:41:43 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+19/02/25 00:41:43 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:1006632960+67108864
+19/02/25 00:41:43 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:57 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 833 bytes result sent to driver
+19/02/25 00:41:57 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 833 bytes result sent to driver
+19/02/25 00:41:57 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 833 bytes result sent to driver
+19/02/25 00:41:57 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 833 bytes result sent to driver
+19/02/25 00:41:58 INFO CoarseGrainedExecutorBackend: Got assigned task 22
+19/02/25 00:41:58 INFO CoarseGrainedExecutorBackend: Got assigned task 25
+19/02/25 00:41:58 INFO Executor: Running task 5.0 in stage 1.0 (TID 25)
+19/02/25 00:41:58 INFO Executor: Running task 2.0 in stage 1.0 (TID 22)
+19/02/25 00:41:58 INFO TorrentBroadcast: Started reading broadcast variable 3
+19/02/25 00:41:58 INFO CoarseGrainedExecutorBackend: Got assigned task 28
+19/02/25 00:41:58 INFO CoarseGrainedExecutorBackend: Got assigned task 31
+19/02/25 00:41:58 INFO Executor: Running task 8.0 in stage 1.0 (TID 28)
+19/02/25 00:41:58 INFO Executor: Running task 11.0 in stage 1.0 (TID 31)
+19/02/25 00:41:58 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.3 KB, free 2.5 GB)
+19/02/25 00:41:58 INFO TorrentBroadcast: Reading broadcast variable 3 took 19 ms
+19/02/25 00:41:58 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 4.0 KB, free 2.5 GB)
+19/02/25 00:41:58 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:134217728+67108864
+19/02/25 00:41:58 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:536870912+67108864
+19/02/25 00:41:58 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:738197504+67108864
+19/02/25 00:41:58 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:58 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:58 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:335544320+67108864
+19/02/25 00:41:58 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:41:58 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:12 INFO Executor: Finished task 8.0 in stage 1.0 (TID 28). 837 bytes result sent to driver
+19/02/25 00:42:12 INFO CoarseGrainedExecutorBackend: Got assigned task 38
+19/02/25 00:42:12 INFO Executor: Running task 18.0 in stage 1.0 (TID 38)
+19/02/25 00:42:12 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:1207959552+67108864
+19/02/25 00:42:12 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:12 INFO Executor: Finished task 2.0 in stage 1.0 (TID 22). 1197 bytes result sent to driver
+19/02/25 00:42:12 INFO CoarseGrainedExecutorBackend: Got assigned task 39
+19/02/25 00:42:12 INFO Executor: Running task 19.0 in stage 1.0 (TID 39)
+19/02/25 00:42:12 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:1275068416+44213409
+19/02/25 00:42:12 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:12 INFO Executor: Finished task 5.0 in stage 1.0 (TID 25). 885 bytes result sent to driver
+19/02/25 00:42:13 INFO Executor: Finished task 11.0 in stage 1.0 (TID 31). 5983 bytes result sent to driver
+19/02/25 00:42:17 INFO Executor: Finished task 19.0 in stage 1.0 (TID 39). 837 bytes result sent to driver
+19/02/25 00:42:18 INFO Executor: Finished task 18.0 in stage 1.0 (TID 38). 837 bytes result sent to driver
+19/02/25 00:42:26 INFO CoarseGrainedExecutorBackend: Got assigned task 42
+19/02/25 00:42:26 INFO CoarseGrainedExecutorBackend: Got assigned task 45
+19/02/25 00:42:26 INFO Executor: Running task 2.0 in stage 2.0 (TID 42)
+19/02/25 00:42:26 INFO TorrentBroadcast: Started reading broadcast variable 4
+19/02/25 00:42:26 INFO Executor: Running task 5.0 in stage 2.0 (TID 45)
+19/02/25 00:42:26 INFO CoarseGrainedExecutorBackend: Got assigned task 48
+19/02/25 00:42:26 INFO Executor: Running task 8.0 in stage 2.0 (TID 48)
+19/02/25 00:42:26 INFO CoarseGrainedExecutorBackend: Got assigned task 51
+19/02/25 00:42:26 INFO Executor: Running task 11.0 in stage 2.0 (TID 51)
+19/02/25 00:42:26 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.3 KB, free 2.5 GB)
+19/02/25 00:42:26 INFO TorrentBroadcast: Reading broadcast variable 4 took 16 ms
+19/02/25 00:42:26 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 4.0 KB, free 2.5 GB)
+19/02/25 00:42:26 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:738197504+67108864
+19/02/25 00:42:26 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:26 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:134217728+67108864
+19/02/25 00:42:26 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:335544320+67108864
+19/02/25 00:42:26 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:26 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:26 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:536870912+67108864
+19/02/25 00:42:26 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:40 INFO Executor: Finished task 8.0 in stage 2.0 (TID 48). 837 bytes result sent to driver
+19/02/25 00:42:40 INFO CoarseGrainedExecutorBackend: Got assigned task 54
+19/02/25 00:42:40 INFO Executor: Running task 14.0 in stage 2.0 (TID 54)
+19/02/25 00:42:40 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:939524096+67108864
+19/02/25 00:42:40 INFO Executor: Finished task 5.0 in stage 2.0 (TID 45). 928 bytes result sent to driver
+19/02/25 00:42:40 INFO CoarseGrainedExecutorBackend: Got assigned task 57
+19/02/25 00:42:40 INFO Executor: Running task 17.0 in stage 2.0 (TID 57)
+19/02/25 00:42:40 INFO HadoopRDD: Input split: s3://mr-input/edges.csv:1140850688+67108864
+19/02/25 00:42:40 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:41 INFO S3NativeFileSystem: Opening 's3://mr-input/edges.csv' for reading
+19/02/25 00:42:41 INFO Executor: Finished task 2.0 in stage 2.0 (TID 42). 1197 bytes result sent to driver
+19/02/25 00:42:41 INFO Executor: Finished task 11.0 in stage 2.0 (TID 51). 5983 bytes result sent to driver
+19/02/25 00:42:48 INFO Executor: Finished task 14.0 in stage 2.0 (TID 54). 837 bytes result sent to driver
+19/02/25 00:42:48 INFO Executor: Finished task 17.0 in stage 2.0 (TID 57). 837 bytes result sent to driver
+19/02/25 00:43:49 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+19/02/25 00:43:49 INFO DiskBlockManager: Shutdown hook called
+19/02/25 00:43:49 INFO ShutdownHookManager: Shutdown hook called
+19/02/25 00:43:49 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1551054971382_0001/spark-ccf2a12d-0f4d-4b8b-8c99-0004e2869d83
